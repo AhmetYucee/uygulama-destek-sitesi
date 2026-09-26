@@ -97,6 +97,7 @@
 
   function renderScores() {
     if (selectedFilter === "nations-league") {
+      scoreUpdated.textContent = "Uluslar Ligi fikstürü: 26 Eyl 2026";
       scoreMessage.textContent =
         "Fikstür ESPN program verisinden alınmıştır (26 Eylül 2026). Ücretsiz canlı skor akışında bu lig bulunmadığından başlamamış maçlar sonuç gibi gösterilmez.";
       scoreList.innerHTML = nationsLeagueMatches
@@ -214,14 +215,18 @@
 
       latestEvents = Array.isArray(data.events) ? data.events : [];
       renderScores();
-      scoreUpdated.textContent = `Son güncelleme ${new Intl.DateTimeFormat("tr-TR", {
+      scoreUpdated.textContent = selectedFilter === "nations-league"
+        ? "Uluslar Ligi fikstürü: 26 Eyl 2026"
+        : `Son güncelleme ${new Intl.DateTimeFormat("tr-TR", {
         hour: "2-digit",
         minute: "2-digit",
         timeZone: "Europe/Istanbul",
       }).format(new Date())}`;
     } catch (error) {
       console.error("Canlı skorlar yüklenemedi:", error);
-      scoreUpdated.textContent = "Güncelleme başarısız";
+      scoreUpdated.textContent = selectedFilter === "nations-league"
+        ? "Genel skor akışı kullanılamıyor"
+        : "Güncelleme başarısız";
       scoreMessage.textContent = "Skor verisi şu anda alınamıyor. Biraz sonra yeniden deneyin.";
     } finally {
       isLoading = false;
