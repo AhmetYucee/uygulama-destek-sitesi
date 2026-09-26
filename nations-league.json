@@ -1,0 +1,1464 @@
+{
+  "source": "ESPN",
+  "fetchedAt": "2026-09-26T18:53:16+00:00",
+  "from": "2026-09-19",
+  "through": "2026-10-17",
+  "events": [
+    {
+      "id": "401861047",
+      "date": "2026-09-24T16:00Z",
+      "home": "Andorra",
+      "away": "Malta",
+      "homeScore": "1",
+      "awayScore": "2",
+      "group": "Group D1",
+      "status": {
+        "state": "post",
+        "detail": "FT"
+      },
+      "clock": "90'+3'"
+    },
+    {
+      "id": "401861048",
+      "date": "2026-09-24T18:45Z",
+      "home": "Austria",
+      "away": "Israel",
+      "homeScore": "3",
+      "awayScore": "1",
+      "group": "Group B3",
+      "status": {
+        "state": "post",
+        "detail": "FT"
+      },
+      "clock": "90'+5'"
+    },
+    {
+      "id": "401861045",
+      "date": "2026-09-24T18:45Z",
+      "home": "Kosovo",
+      "away": "Republic of Ireland",
+      "homeScore": "1",
+      "awayScore": "0",
+      "group": "Group B3",
+      "status": {
+        "state": "post",
+        "detail": "FT"
+      },
+      "clock": "90'+4'"
+    },
+    {
+      "id": "401861043",
+      "date": "2026-09-24T18:45Z",
+      "home": "Liechtenstein",
+      "away": "Lithuania",
+      "homeScore": "0",
+      "awayScore": "2",
+      "group": "Group D2",
+      "status": {
+        "state": "post",
+        "detail": "FT"
+      },
+      "clock": "90'+4'"
+    },
+    {
+      "id": "401861041",
+      "date": "2026-09-24T18:45Z",
+      "home": "Netherlands",
+      "away": "Germany",
+      "homeScore": "1",
+      "awayScore": "1",
+      "group": "Group A2",
+      "status": {
+        "state": "post",
+        "detail": "FT"
+      },
+      "clock": "90'+5'"
+    },
+    {
+      "id": "401861046",
+      "date": "2026-09-24T18:45Z",
+      "home": "Norway",
+      "away": "Denmark",
+      "homeScore": "3",
+      "awayScore": "2",
+      "group": "Group A4",
+      "status": {
+        "state": "post",
+        "detail": "FT"
+      },
+      "clock": "90'+5'"
+    },
+    {
+      "id": "401861044",
+      "date": "2026-09-24T18:45Z",
+      "home": "Portugal",
+      "away": "Wales",
+      "homeScore": "1",
+      "awayScore": "0",
+      "group": "Group A4",
+      "status": {
+        "state": "post",
+        "detail": "FT"
+      },
+      "clock": "90'+5'"
+    },
+    {
+      "id": "401861042",
+      "date": "2026-09-24T18:45Z",
+      "home": "Serbia",
+      "away": "Greece",
+      "homeScore": "1",
+      "awayScore": "2",
+      "group": "Group A2",
+      "status": {
+        "state": "post",
+        "detail": "FT"
+      },
+      "clock": "90'+7'"
+    },
+    {
+      "id": "401861050",
+      "date": "2026-09-25T16:00Z",
+      "home": "Armenia",
+      "away": "Latvia",
+      "homeScore": "2",
+      "awayScore": "0",
+      "group": "Group C2",
+      "status": {
+        "state": "post",
+        "detail": "FT"
+      },
+      "clock": "90'+4'"
+    },
+    {
+      "id": "401861049",
+      "date": "2026-09-25T16:00Z",
+      "home": "Georgia",
+      "away": "Northern Ireland",
+      "homeScore": "0",
+      "awayScore": "1",
+      "group": "Group B2",
+      "status": {
+        "state": "post",
+        "detail": "FT"
+      },
+      "clock": "90'+12'"
+    },
+    {
+      "id": "401861054",
+      "date": "2026-09-25T18:45Z",
+      "home": "Hungary",
+      "away": "Ukraine",
+      "homeScore": "0",
+      "awayScore": "1",
+      "group": "Group B2",
+      "status": {
+        "state": "post",
+        "detail": "FT"
+      },
+      "clock": "90'+7'"
+    },
+    {
+      "id": "401861052",
+      "date": "2026-09-25T18:45Z",
+      "home": "Italy",
+      "away": "Belgium",
+      "homeScore": "0",
+      "awayScore": "2",
+      "group": "Group A1",
+      "status": {
+        "state": "post",
+        "detail": "FT"
+      },
+      "clock": "90'+3'"
+    },
+    {
+      "id": "401861056",
+      "date": "2026-09-25T18:45Z",
+      "home": "Montenegro",
+      "away": "Cyprus",
+      "homeScore": "2",
+      "awayScore": "1",
+      "group": "Group C2",
+      "status": {
+        "state": "post",
+        "detail": "FT"
+      },
+      "clock": "90'+4'"
+    },
+    {
+      "id": "401861055",
+      "date": "2026-09-25T18:45Z",
+      "home": "Poland",
+      "away": "Bosnia-Herzegovina",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group B4",
+      "status": {
+        "state": "post",
+        "detail": "FT"
+      },
+      "clock": "90'+4'"
+    },
+    {
+      "id": "401861051",
+      "date": "2026-09-25T18:45Z",
+      "home": "Sweden",
+      "away": "Romania",
+      "homeScore": "2",
+      "awayScore": "1",
+      "group": "Group B4",
+      "status": {
+        "state": "post",
+        "detail": "FT"
+      },
+      "clock": "90'+8'"
+    },
+    {
+      "id": "401861053",
+      "date": "2026-09-25T18:45Z",
+      "home": "Türkiye",
+      "away": "France",
+      "homeScore": "0",
+      "awayScore": "1",
+      "group": "Group A1",
+      "status": {
+        "state": "post",
+        "detail": "FT"
+      },
+      "clock": "90'+9'"
+    },
+    {
+      "id": "401861057",
+      "date": "2026-09-26T13:00Z",
+      "home": "Slovenia",
+      "away": "Scotland",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group B1",
+      "status": {
+        "state": "post",
+        "detail": "FT"
+      },
+      "clock": "90'+2'"
+    },
+    {
+      "id": "401861061",
+      "date": "2026-09-26T16:00Z",
+      "home": "Bulgaria",
+      "away": "Luxembourg",
+      "homeScore": "1",
+      "awayScore": "2",
+      "group": "Group C4",
+      "status": {
+        "state": "post",
+        "detail": "FT"
+      },
+      "clock": "90'+4'"
+    },
+    {
+      "id": "401861060",
+      "date": "2026-09-26T16:00Z",
+      "home": "Faroe Islands",
+      "away": "Kazakhstan",
+      "homeScore": "1",
+      "awayScore": "1",
+      "group": "Group C3",
+      "status": {
+        "state": "post",
+        "detail": "FT"
+      },
+      "clock": "90'+3'"
+    },
+    {
+      "id": "401861058",
+      "date": "2026-09-26T16:00Z",
+      "home": "Iceland",
+      "away": "Estonia",
+      "homeScore": "1",
+      "awayScore": "1",
+      "group": "Group C4",
+      "status": {
+        "state": "post",
+        "detail": "FT"
+      },
+      "clock": "90'+4'"
+    },
+    {
+      "id": "401861059",
+      "date": "2026-09-26T16:00Z",
+      "home": "San Marino",
+      "away": "Finland",
+      "homeScore": "0",
+      "awayScore": "7",
+      "group": "Group C1",
+      "status": {
+        "state": "post",
+        "detail": "FT"
+      },
+      "clock": "90'+5'"
+    },
+    {
+      "id": "401861062",
+      "date": "2026-09-26T18:45Z",
+      "home": "Albania",
+      "away": "Belarus",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group C1",
+      "status": {
+        "state": "in",
+        "detail": "3'"
+      },
+      "clock": "3'"
+    },
+    {
+      "id": "401861063",
+      "date": "2026-09-26T18:45Z",
+      "home": "Czechia",
+      "away": "Croatia",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group A3",
+      "status": {
+        "state": "in",
+        "detail": "7'"
+      },
+      "clock": "7'"
+    },
+    {
+      "id": "401861066",
+      "date": "2026-09-26T18:45Z",
+      "home": "England",
+      "away": "Spain",
+      "homeScore": "0",
+      "awayScore": "1",
+      "group": "Group A3",
+      "status": {
+        "state": "in",
+        "detail": "4'"
+      },
+      "clock": "4'"
+    },
+    {
+      "id": "401861065",
+      "date": "2026-09-26T18:45Z",
+      "home": "North Macedonia",
+      "away": "Switzerland",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group B1",
+      "status": {
+        "state": "in",
+        "detail": "5'"
+      },
+      "clock": "5'"
+    },
+    {
+      "id": "401861064",
+      "date": "2026-09-26T18:45Z",
+      "home": "Slovakia",
+      "away": "Moldova",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group C3",
+      "status": {
+        "state": "in",
+        "detail": "7'"
+      },
+      "clock": "7'"
+    },
+    {
+      "id": "401861067",
+      "date": "2026-09-27T13:00Z",
+      "home": "Lithuania",
+      "away": "Azerbaijan",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group D2",
+      "status": {
+        "state": "pre",
+        "detail": "Sun, September 27th at 9:00 AM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861071",
+      "date": "2026-09-27T16:00Z",
+      "home": "Austria",
+      "away": "Kosovo",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group B3",
+      "status": {
+        "state": "pre",
+        "detail": "Sun, September 27th at 12:00 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861070",
+      "date": "2026-09-27T16:00Z",
+      "home": "Denmark",
+      "away": "Wales",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group A4",
+      "status": {
+        "state": "pre",
+        "detail": "Sun, September 27th at 12:00 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861069",
+      "date": "2026-09-27T16:00Z",
+      "home": "Gibraltar",
+      "away": "Andorra",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group D1",
+      "status": {
+        "state": "pre",
+        "detail": "Sun, September 27th at 12:00 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861068",
+      "date": "2026-09-27T16:00Z",
+      "home": "Serbia",
+      "away": "Netherlands",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group A2",
+      "status": {
+        "state": "pre",
+        "detail": "Sun, September 27th at 12:00 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861074",
+      "date": "2026-09-27T18:45Z",
+      "home": "Germany",
+      "away": "Greece",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group A2",
+      "status": {
+        "state": "pre",
+        "detail": "Sun, September 27th at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861072",
+      "date": "2026-09-27T18:45Z",
+      "home": "Israel",
+      "away": "Republic of Ireland",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group B3",
+      "status": {
+        "state": "pre",
+        "detail": "Sun, September 27th at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861073",
+      "date": "2026-09-27T18:45Z",
+      "home": "Norway",
+      "away": "Portugal",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group A4",
+      "status": {
+        "state": "pre",
+        "detail": "Sun, September 27th at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861076",
+      "date": "2026-09-28T16:00Z",
+      "home": "Armenia",
+      "away": "Montenegro",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group C2",
+      "status": {
+        "state": "pre",
+        "detail": "Mon, September 28th at 12:00 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861075",
+      "date": "2026-09-28T16:00Z",
+      "home": "Georgia",
+      "away": "Ukraine",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group B2",
+      "status": {
+        "state": "pre",
+        "detail": "Mon, September 28th at 12:00 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861082",
+      "date": "2026-09-28T16:00Z",
+      "home": "Latvia",
+      "away": "Cyprus",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group C2",
+      "status": {
+        "state": "pre",
+        "detail": "Mon, September 28th at 12:00 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861081",
+      "date": "2026-09-28T18:45Z",
+      "home": "Belgium",
+      "away": "France",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group A1",
+      "status": {
+        "state": "pre",
+        "detail": "Mon, September 28th at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861079",
+      "date": "2026-09-28T18:45Z",
+      "home": "Northern Ireland",
+      "away": "Hungary",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group B2",
+      "status": {
+        "state": "pre",
+        "detail": "Mon, September 28th at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861078",
+      "date": "2026-09-28T18:45Z",
+      "home": "Romania",
+      "away": "Bosnia-Herzegovina",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group B4",
+      "status": {
+        "state": "pre",
+        "detail": "Mon, September 28th at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861080",
+      "date": "2026-09-28T18:45Z",
+      "home": "Sweden",
+      "away": "Poland",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group B4",
+      "status": {
+        "state": "pre",
+        "detail": "Mon, September 28th at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861077",
+      "date": "2026-09-28T18:45Z",
+      "home": "Türkiye",
+      "away": "Italy",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group A1",
+      "status": {
+        "state": "pre",
+        "detail": "Mon, September 28th at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861089",
+      "date": "2026-09-29T16:00Z",
+      "home": "Finland",
+      "away": "Belarus",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group C1",
+      "status": {
+        "state": "pre",
+        "detail": "Tue, September 29th at 12:00 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861090",
+      "date": "2026-09-29T16:00Z",
+      "home": "Moldova",
+      "away": "Faroe Islands",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group C3",
+      "status": {
+        "state": "pre",
+        "detail": "Tue, September 29th at 12:00 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861083",
+      "date": "2026-09-29T18:45Z",
+      "home": "Bulgaria",
+      "away": "Estonia",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group C4",
+      "status": {
+        "state": "pre",
+        "detail": "Tue, September 29th at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861092",
+      "date": "2026-09-29T18:45Z",
+      "home": "Czechia",
+      "away": "England",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group A3",
+      "status": {
+        "state": "pre",
+        "detail": "Tue, September 29th at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861086",
+      "date": "2026-09-29T18:45Z",
+      "home": "Luxembourg",
+      "away": "Iceland",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group C4",
+      "status": {
+        "state": "pre",
+        "detail": "Tue, September 29th at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861088",
+      "date": "2026-09-29T18:45Z",
+      "home": "San Marino",
+      "away": "Albania",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group C1",
+      "status": {
+        "state": "pre",
+        "detail": "Tue, September 29th at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861091",
+      "date": "2026-09-29T18:45Z",
+      "home": "Scotland",
+      "away": "Switzerland",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group B1",
+      "status": {
+        "state": "pre",
+        "detail": "Tue, September 29th at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861085",
+      "date": "2026-09-29T18:45Z",
+      "home": "Slovakia",
+      "away": "Kazakhstan",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group C3",
+      "status": {
+        "state": "pre",
+        "detail": "Tue, September 29th at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861087",
+      "date": "2026-09-29T18:45Z",
+      "home": "Slovenia",
+      "away": "North Macedonia",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group B1",
+      "status": {
+        "state": "pre",
+        "detail": "Tue, September 29th at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861084",
+      "date": "2026-09-29T18:45Z",
+      "home": "Spain",
+      "away": "Croatia",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group A3",
+      "status": {
+        "state": "pre",
+        "detail": "Tue, September 29th at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861093",
+      "date": "2026-10-01T16:00Z",
+      "home": "Azerbaijan",
+      "away": "Liechtenstein",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group D2",
+      "status": {
+        "state": "pre",
+        "detail": "Thu, October 1st at 12:00 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861096",
+      "date": "2026-10-01T18:45Z",
+      "home": "Denmark",
+      "away": "Portugal",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group A4",
+      "status": {
+        "state": "pre",
+        "detail": "Thu, October 1st at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861097",
+      "date": "2026-10-01T18:45Z",
+      "home": "Germany",
+      "away": "Serbia",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group A2",
+      "status": {
+        "state": "pre",
+        "detail": "Thu, October 1st at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861098",
+      "date": "2026-10-01T18:45Z",
+      "home": "Greece",
+      "away": "Netherlands",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group A2",
+      "status": {
+        "state": "pre",
+        "detail": "Thu, October 1st at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861095",
+      "date": "2026-10-01T18:45Z",
+      "home": "Israel",
+      "away": "Kosovo",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group B3",
+      "status": {
+        "state": "pre",
+        "detail": "Thu, October 1st at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861099",
+      "date": "2026-10-01T18:45Z",
+      "home": "Malta",
+      "away": "Gibraltar",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group D1",
+      "status": {
+        "state": "pre",
+        "detail": "Thu, October 1st at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861094",
+      "date": "2026-10-01T18:45Z",
+      "home": "Republic of Ireland",
+      "away": "Austria",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group B3",
+      "status": {
+        "state": "pre",
+        "detail": "Thu, October 1st at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861100",
+      "date": "2026-10-01T18:45Z",
+      "home": "Wales",
+      "away": "Norway",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group A4",
+      "status": {
+        "state": "pre",
+        "detail": "Thu, October 1st at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861101",
+      "date": "2026-10-02T14:00Z",
+      "home": "Kazakhstan",
+      "away": "Moldova",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group C3",
+      "status": {
+        "state": "pre",
+        "detail": "Fri, October 2nd at 10:00 AM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861104",
+      "date": "2026-10-02T16:00Z",
+      "home": "Cyprus",
+      "away": "Armenia",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group C2",
+      "status": {
+        "state": "pre",
+        "detail": "Fri, October 2nd at 12:00 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861105",
+      "date": "2026-10-02T16:00Z",
+      "home": "Latvia",
+      "away": "Montenegro",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group C2",
+      "status": {
+        "state": "pre",
+        "detail": "Fri, October 2nd at 12:00 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861109",
+      "date": "2026-10-02T18:45Z",
+      "home": "Belgium",
+      "away": "Türkiye",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group A1",
+      "status": {
+        "state": "pre",
+        "detail": "Fri, October 2nd at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861107",
+      "date": "2026-10-02T18:45Z",
+      "home": "Bosnia-Herzegovina",
+      "away": "Sweden",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group B4",
+      "status": {
+        "state": "pre",
+        "detail": "Fri, October 2nd at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861110",
+      "date": "2026-10-02T18:45Z",
+      "home": "Faroe Islands",
+      "away": "Slovakia",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group C3",
+      "status": {
+        "state": "pre",
+        "detail": "Fri, October 2nd at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861103",
+      "date": "2026-10-02T18:45Z",
+      "home": "France",
+      "away": "Italy",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group A1",
+      "status": {
+        "state": "pre",
+        "detail": "Fri, October 2nd at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861102",
+      "date": "2026-10-02T18:45Z",
+      "home": "Hungary",
+      "away": "Georgia",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group B2",
+      "status": {
+        "state": "pre",
+        "detail": "Fri, October 2nd at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861108",
+      "date": "2026-10-02T18:45Z",
+      "home": "Poland",
+      "away": "Romania",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group B4",
+      "status": {
+        "state": "pre",
+        "detail": "Fri, October 2nd at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861106",
+      "date": "2026-10-02T18:45Z",
+      "home": "Ukraine",
+      "away": "Northern Ireland",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group B2",
+      "status": {
+        "state": "pre",
+        "detail": "Fri, October 2nd at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861111",
+      "date": "2026-10-03T13:00Z",
+      "home": "Finland",
+      "away": "Albania",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group C1",
+      "status": {
+        "state": "pre",
+        "detail": "Sat, October 3rd at 9:00 AM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861114",
+      "date": "2026-10-03T16:00Z",
+      "home": "Belarus",
+      "away": "San Marino",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group C1",
+      "status": {
+        "state": "pre",
+        "detail": "Sat, October 3rd at 12:00 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861113",
+      "date": "2026-10-03T16:00Z",
+      "home": "Croatia",
+      "away": "England",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group A3",
+      "status": {
+        "state": "pre",
+        "detail": "Sat, October 3rd at 12:00 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861115",
+      "date": "2026-10-03T16:00Z",
+      "home": "Estonia",
+      "away": "Luxembourg",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group C4",
+      "status": {
+        "state": "pre",
+        "detail": "Sat, October 3rd at 12:00 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861112",
+      "date": "2026-10-03T16:00Z",
+      "home": "Iceland",
+      "away": "Bulgaria",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group C4",
+      "status": {
+        "state": "pre",
+        "detail": "Sat, October 3rd at 12:00 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861116",
+      "date": "2026-10-03T18:45Z",
+      "home": "North Macedonia",
+      "away": "Scotland",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group B1",
+      "status": {
+        "state": "pre",
+        "detail": "Sat, October 3rd at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861118",
+      "date": "2026-10-03T18:45Z",
+      "home": "Spain",
+      "away": "Czechia",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group A3",
+      "status": {
+        "state": "pre",
+        "detail": "Sat, October 3rd at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861117",
+      "date": "2026-10-03T18:45Z",
+      "home": "Switzerland",
+      "away": "Slovenia",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group B1",
+      "status": {
+        "state": "pre",
+        "detail": "Sat, October 3rd at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861119",
+      "date": "2026-10-04T13:00Z",
+      "home": "Azerbaijan",
+      "away": "Lithuania",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group D2",
+      "status": {
+        "state": "pre",
+        "detail": "Sun, October 4th at 9:00 AM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861121",
+      "date": "2026-10-04T16:00Z",
+      "home": "Kosovo",
+      "away": "Austria",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group B3",
+      "status": {
+        "state": "pre",
+        "detail": "Sun, October 4th at 12:00 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861120",
+      "date": "2026-10-04T16:00Z",
+      "home": "Malta",
+      "away": "Andorra",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group D1",
+      "status": {
+        "state": "pre",
+        "detail": "Sun, October 4th at 12:00 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861123",
+      "date": "2026-10-04T18:45Z",
+      "home": "Greece",
+      "away": "Germany",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group A2",
+      "status": {
+        "state": "pre",
+        "detail": "Sun, October 4th at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861122",
+      "date": "2026-10-04T18:45Z",
+      "home": "Netherlands",
+      "away": "Serbia",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group A2",
+      "status": {
+        "state": "pre",
+        "detail": "Sun, October 4th at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861126",
+      "date": "2026-10-04T18:45Z",
+      "home": "Portugal",
+      "away": "Norway",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group A4",
+      "status": {
+        "state": "pre",
+        "detail": "Sun, October 4th at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861124",
+      "date": "2026-10-04T18:45Z",
+      "home": "Republic of Ireland",
+      "away": "Israel",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group B3",
+      "status": {
+        "state": "pre",
+        "detail": "Sun, October 4th at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861125",
+      "date": "2026-10-04T18:45Z",
+      "home": "Wales",
+      "away": "Denmark",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group A4",
+      "status": {
+        "state": "pre",
+        "detail": "Sun, October 4th at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861127",
+      "date": "2026-10-05T16:00Z",
+      "home": "Cyprus",
+      "away": "Latvia",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group C2",
+      "status": {
+        "state": "pre",
+        "detail": "Mon, October 5th at 12:00 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861133",
+      "date": "2026-10-05T18:45Z",
+      "home": "Bosnia-Herzegovina",
+      "away": "Poland",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group B4",
+      "status": {
+        "state": "pre",
+        "detail": "Mon, October 5th at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861129",
+      "date": "2026-10-05T18:45Z",
+      "home": "France",
+      "away": "Belgium",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group A1",
+      "status": {
+        "state": "pre",
+        "detail": "Mon, October 5th at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861131",
+      "date": "2026-10-05T18:45Z",
+      "home": "Italy",
+      "away": "Türkiye",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group A1",
+      "status": {
+        "state": "pre",
+        "detail": "Mon, October 5th at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861130",
+      "date": "2026-10-05T18:45Z",
+      "home": "Montenegro",
+      "away": "Armenia",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group C2",
+      "status": {
+        "state": "pre",
+        "detail": "Mon, October 5th at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861132",
+      "date": "2026-10-05T18:45Z",
+      "home": "Northern Ireland",
+      "away": "Georgia",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group B2",
+      "status": {
+        "state": "pre",
+        "detail": "Mon, October 5th at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861128",
+      "date": "2026-10-05T18:45Z",
+      "home": "Romania",
+      "away": "Sweden",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group B4",
+      "status": {
+        "state": "pre",
+        "detail": "Mon, October 5th at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861134",
+      "date": "2026-10-05T18:45Z",
+      "home": "Ukraine",
+      "away": "Hungary",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group B2",
+      "status": {
+        "state": "pre",
+        "detail": "Mon, October 5th at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861135",
+      "date": "2026-10-06T14:00Z",
+      "home": "Kazakhstan",
+      "away": "Faroe Islands",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group C3",
+      "status": {
+        "state": "pre",
+        "detail": "Tue, October 6th at 10:00 AM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861140",
+      "date": "2026-10-06T18:45Z",
+      "home": "Albania",
+      "away": "San Marino",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group C1",
+      "status": {
+        "state": "pre",
+        "detail": "Tue, October 6th at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861138",
+      "date": "2026-10-06T18:45Z",
+      "home": "Belarus",
+      "away": "Finland",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group C1",
+      "status": {
+        "state": "pre",
+        "detail": "Tue, October 6th at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861137",
+      "date": "2026-10-06T18:45Z",
+      "home": "Croatia",
+      "away": "Spain",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group A3",
+      "status": {
+        "state": "pre",
+        "detail": "Tue, October 6th at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861142",
+      "date": "2026-10-06T18:45Z",
+      "home": "England",
+      "away": "Czechia",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group A3",
+      "status": {
+        "state": "pre",
+        "detail": "Tue, October 6th at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861136",
+      "date": "2026-10-06T18:45Z",
+      "home": "Estonia",
+      "away": "Iceland",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group C4",
+      "status": {
+        "state": "pre",
+        "detail": "Tue, October 6th at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861141",
+      "date": "2026-10-06T18:45Z",
+      "home": "Luxembourg",
+      "away": "Bulgaria",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group C4",
+      "status": {
+        "state": "pre",
+        "detail": "Tue, October 6th at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861144",
+      "date": "2026-10-06T18:45Z",
+      "home": "Moldova",
+      "away": "Slovakia",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group C3",
+      "status": {
+        "state": "pre",
+        "detail": "Tue, October 6th at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861143",
+      "date": "2026-10-06T18:45Z",
+      "home": "Scotland",
+      "away": "Slovenia",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group B1",
+      "status": {
+        "state": "pre",
+        "detail": "Tue, October 6th at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861139",
+      "date": "2026-10-06T18:45Z",
+      "home": "Switzerland",
+      "away": "North Macedonia",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group B1",
+      "status": {
+        "state": "pre",
+        "detail": "Tue, October 6th at 2:45 PM EDT"
+      },
+      "clock": "0'"
+    }
+  ]
+}
