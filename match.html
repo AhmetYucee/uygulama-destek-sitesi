@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Taç Bahçesi: beş aşamalı, dokunmatik uyumlu mücevher eşleştirme bulmacası." />
+    <meta name="theme-color" content="#fbf8f2" />
+    <title>Taç Bahçesi | Uygulama Bilgileri</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="match.css" />
+    <script src="match.js" defer></script>
+    <script src="chatbot.js" defer></script>
+  </head>
+  <body class="match-body">
+    <header class="site-header">
+      <a class="brand" href="index.html">Uygulama Bilgileri</a>
+      <nav aria-label="Ana menü">
+        <a href="game.html">Yıldız Nöbeti</a>
+        <a aria-current="page" href="match.html">Taç Bahçesi</a>
+        <a href="support.html">Destek</a>
+        <a href="privacy.html">Gizlilik</a>
+        <a href="terms.html">Koşullar</a>
+      </nav>
+    </header>
+
+    <main class="match-shell">
+      <section class="match-hero">
+        <div>
+          <p class="match-eyebrow"><span aria-hidden="true">✧</span> Küçük eşleşmeler, büyük mutluluk</p>
+          <h1>Taç Bahçesi</h1>
+          <p>Üç veya daha fazla mücevheri eşleştir. Her bölümde hedef renge ulaş.</p>
+        </div>
+        <button class="match-help" id="match-help" type="button" aria-label="Nasıl oynanır?">
+          <span aria-hidden="true">?</span><span class="help-label">Nasıl oynanır?</span>
+        </button>
+      </section>
+
+      <section class="chapter-section" aria-label="Beş bulmaca bölümü">
+        <div class="chapter-heading">
+          <div>
+            <p class="match-eyebrow">BULMACA YOLU</p>
+            <h2>Beş bölüm, beş hedef</h2>
+          </div>
+          <p id="chapter-progress" aria-live="polite"></p>
+        </div>
+        <div class="chapter-list" id="chapter-list"></div>
+      </section>
+
+      <section class="puzzle-layout" aria-label="Mücevher bulmacası">
+        <div class="puzzle-card">
+          <div class="puzzle-heading">
+            <div>
+              <p class="match-eyebrow" id="chapter-difficulty">BAŞLANGIÇ</p>
+              <h2 id="chapter-title">Gül Bahçesi</h2>
+            </div>
+            <button class="match-restart" id="restart-chapter" type="button" aria-label="Bölümü yeniden başlat">↻</button>
+          </div>
+          <div class="jewel-board-frame">
+            <div class="jewel-board" id="jewel-board" role="grid" aria-label="Taç Bahçesi mücevher tahtası"></div>
+          </div>
+          <p class="puzzle-message" id="puzzle-message" role="status" aria-live="polite">
+            Bir mücevher seç, sonra yanındakiyle yer değiştir.
+          </p>
+        </div>
+
+        <aside class="goal-card" aria-label="Bölüm hedefi">
+          <p class="match-eyebrow">BÖLÜM HEDEFİ</p>
+          <div class="goal-jewel" id="goal-jewel" aria-hidden="true">●</div>
+          <h2 id="goal-title">Safirleri topla</h2>
+          <p class="goal-count"><strong id="collected-count">0</strong><span> / <span id="target-count">12</span></span></p>
+          <div class="collection-track" aria-label="Hedef ilerlemesi">
+            <div class="collection-fill" id="collection-fill"></div>
+          </div>
+          <div class="moves-panel">
+            <span aria-hidden="true">↔</span>
+            <span>Kalan hamle</span>
+            <strong id="moves-count">18</strong>
+          </div>
+          <p class="goal-tip" id="goal-tip">Hedef rengin eşleşmelerini yakala; taşlar yukarıdan yenilenir.</p>
+          <button class="next-chapter" id="next-chapter" type="button" hidden>
+            Sonraki bölüm <span aria-hidden="true">→</span>
+          </button>
+          <button class="retry-chapter" id="retry-chapter" type="button" hidden>Yeniden dene</button>
+        </aside>
+      </section>
+      <p class="match-disclaimer">
+        Özgün bir mücevher eşleştirme oyunu; başka oyunların adını, karakterlerini veya görsellerini kullanmaz.
+      </p>
+    </main>
+
+    <dialog class="match-dialog" id="match-dialog">
+      <form method="dialog"><button class="match-dialog-close" aria-label="Kapat">×</button></form>
+      <p class="match-eyebrow">ÜÇ ADIMDA OYNA</p>
+      <h2>Mücevherleri eşleştir</h2>
+      <ol>
+        <li>Bir mücevhere, sonra hemen yanındaki mücevhere dokun.</li>
+        <li>Yatay veya dikey en az üç aynı taşı bir araya getir.</li>
+        <li>Hedef mücevherlerden yeterince topla; hamlelerini iyi kullan.</li>
+      </ol>
+      <p>Bir hamle eşleşme oluşturmazsa taşlar eski yerine döner ve hamle sayısı azalmaz.</p>
+      <form method="dialog"><button class="match-dialog-done">Oyuna dön</button></form>
+    </dialog>
+
+    <footer class="site-footer">
+      <span>© 2026 [Geliştirici adı]</span>
+      <span><a href="privacy.html">Gizlilik</a> · <a href="terms.html">Koşullar</a></span>
+    </footer>
+  </body>
+</html>
