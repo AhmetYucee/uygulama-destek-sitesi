@@ -1,6 +1,177 @@
 (() => {
   "use strict";
 
+  const scoreList = document.querySelector("#score-list");
+  const scoreMessage = document.querySelector("#score-message");
+  const scoreUpdated = document.querySelector("#live-update");
+  const refreshButton = document.querySelector("#refresh-scores");
+  const filterButtons = [...document.querySelectorAll(".score-filter")];
+  const scoreApi = "https://www.thesportsdb.com/api/v1/json/3/eventsday.php";
+  const refreshInterval = 60_000;
+  let selectedFilter = "all";
+  let latestEvents = [];
+  let isLoading = false;
+
+  function escapeHTML(value) {
+    return String(value ?? "").replace(/[&<>"']/g, (character) => {
+      const entities = {
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;",
+      };
+      return entities[character];
+    });
+  }
+
+  function todayInIstanbul() {
+    const parts = new Intl.DateTimeFormat("en-CA", {
+      timeZone: "Europe/Istanbul",
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+    }).formatToParts(new Date());
+    const values = Object.fromEntries(parts.map(({ type, value }) => [type, value]));
+    return `${values.year}-${values.month}-${values.day}`;
+  }
+
+  function isLiveEvent(event) {
+    return /^(live|1h|2h|ht|et|bt|p|pen)$/i.test(event.strStatus ?? "") ||
+      /live|in progress|1st half|2nd half|half time|extra time|penalt/i.test(
+        event.strStatus ?? "",
+      );
+  }
+
+  function getStatusLabel(event) {
+    if (isLiveEvent(event)) {
+      const status = event.strStatus ?? "";
+      const labels = {
+        "1H": "1. yarı",
+        "2H": "2. yarı",
+        HT: "Devre arası",
+        ET: "Uzatmalar",
+        P: "Penaltılar",
+      };
+      return labels[status.toUpperCase()] ?? "Canlı";
+    }
+
+    if (/^(ft|aet|ft pens|match finished)$/i.test(event.strStatus ?? "")) {
+      return "Maç bitti";
+    }
+
+    return event.strTimeLocal || event.strTime || "Programda";
+  }
+
+  function renderScores() {
+    const visibleEvents = latestEvents.filter((event) => {
+      if (selectedFilter === "live") return isLiveEvent(event);
+      if (selectedFilter === "world-cup") {
+        return /world cup|dünya kupası/i.test(event.strLeague ?? "");
+      }
+      return true;
+    });
+
+    if (latestEvents.length === 0) {
+      scoreMessage.textContent = "Bugün için listelenecek maç bulunamadı.";
+    } else if (visibleEvents.length === 0 && selectedFilter === "live") {
+      scoreMessage.textContent = "Şu anda canlı maç görünmüyor. Yeni maçlar için otomatik yenileme açık.";
+    } else if (visibleEvents.length === 0 && selectedFilter === "world-cup") {
+      scoreMessage.textContent = "Bugün Dünya Kupası maçı görünmüyor.";
+    } else {
+      scoreMessage.textContent = "";
+    }
+
+    scoreList.innerHTML = visibleEvents
+      .map((event) => {
+        const homeScore = event.intHomeScore ?? "—";
+        const awayScore = event.intAwayScore ?? "—";
+        const live = isLiveEvent(event);
+        const timeOrStatus = getStatusLabel(event);
+        const leagueName = event.strLeague || "Futbol";
+        const homeBadge = event.strHomeTeamBadge
+          ? `<img src="${escapeHTML(event.strHomeTeamBadge)}" alt="" loading="lazy" />`
+          : "";
+        const awayBadge = event.strAwayTeamBadge
+          ? `<img src="${escapeHTML(event.strAwayTeamBadge)}" alt="" loading="lazy" />`
+          : "";
+
+        return `
+          <article class="score-card${live ? " is-live" : ""}">
+            <div class="score-card-meta">
+              <span>${escapeHTML(leagueName)}</span>
+              <span class="score-status">${live ? '<i aria-hidden="true"></i>' : ""}${escapeHTML(timeOrStatus)}</span>
+            </div>
+            <div class="score-team-row">
+              <span class="score-team">${homeBadge}<strong>${escapeHTML(event.strHomeTeam || "Ev sahibi")}</strong></span>
+              <strong class="score-number">${escapeHTML(homeScore)}</strong>
+            </div>
+            <div class="score-team-row">
+              <span class="score-team">${awayBadge}<strong>${escapeHTML(event.strAwayTeam || "Deplasman")}</strong></span>
+              <strong class="score-number">${escapeHTML(awayScore)}</strong>
+            </div>
+          </article>`;
+      })
+      .join("");
+  }
+
+  async function loadScores() {
+    if (isLoading) return;
+    isLoading = true;
+    refreshButton.disabled = true;
+    scoreUpdated.textContent = "Skorlar güncelleniyor…";
+
+    try {
+      const params = new URLSearchParams({
+        d: todayInIstanbul(),
+        s: "Soccer",
+      });
+      const response = await fetch(`${scoreApi}?${params}`, {
+        headers: { Accept: "application/json" },
+      });
+
+      if (!response.ok) {
+        throw new Error(`Skor servisi HTTP ${response.status}`);
+      }
+
+      const data = await response.json();
+      if (!Array.isArray(data.events) && data.events !== null) {
+        throw new Error("Skor servisi beklenmeyen yanıt verdi.");
+      }
+
+      latestEvents = Array.isArray(data.events) ? data.events : [];
+      renderScores();
+      scoreUpdated.textContent = `Son güncelleme ${new Intl.DateTimeFormat("tr-TR", {
+        hour: "2-digit",
+        minute: "2-digit",
+        timeZone: "Europe/Istanbul",
+      }).format(new Date())}`;
+    } catch (error) {
+      console.error("Canlı skorlar yüklenemedi:", error);
+      scoreUpdated.textContent = "Güncelleme başarısız";
+      scoreMessage.textContent = "Skor verisi şu anda alınamıyor. Biraz sonra yeniden deneyin.";
+    } finally {
+      isLoading = false;
+      refreshButton.disabled = false;
+    }
+  }
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      selectedFilter = button.dataset.filter;
+      filterButtons.forEach((filterButton) => {
+        const isSelected = filterButton === button;
+        filterButton.classList.toggle("is-active", isSelected);
+        filterButton.setAttribute("aria-pressed", String(isSelected));
+      });
+      renderScores();
+    });
+  });
+
+  refreshButton.addEventListener("click", loadScores);
+  loadScores();
+  window.setInterval(loadScores, refreshInterval);
+
   const verifiedFixtures = [
     {
       date: "2026-10-09T20:00:00+03:00",

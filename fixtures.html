@@ -10,8 +10,8 @@
     <meta name="theme-color" content="#f5f6f8" />
     <title>Maç Merkezi | Uygulama Bilgileri</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="fixtures.css?v=20260926" />
-    <script src="fixtures.js?v=20260926" defer></script>
+    <link rel="stylesheet" href="fixtures.css?v=20260926-live1" />
+    <script src="fixtures.js?v=20260926-live1" defer></script>
     <script src="chatbot.js" defer></script>
   </head>
   <body class="fixtures-body">
@@ -39,6 +39,31 @@
         <div class="range-card" aria-label="Takvim aralığı">
           <span class="range-icon" aria-hidden="true">▦</span>
           <span><strong>3 haftalık görünüm</strong><small>26 Eylül – 17 Ekim 2026 · TRT</small></span>
+        </div>
+      </section>
+
+      <section class="live-score-panel" aria-labelledby="live-score-title">
+        <div class="panel-heading live-score-heading">
+          <div>
+            <p class="fixtures-eyebrow">DÜNYA FUTBOLU</p>
+            <h2 id="live-score-title">Canlı skorlar</h2>
+          </div>
+          <div class="live-score-actions">
+            <span class="live-update" id="live-update" aria-live="polite">Skorlar yükleniyor…</span>
+            <button class="refresh-button" id="refresh-scores" type="button">Yenile</button>
+          </div>
+        </div>
+        <div class="score-filters" role="group" aria-label="Maç filtresi">
+          <button class="score-filter is-active" type="button" data-filter="all" aria-pressed="true">Tüm maçlar</button>
+          <button class="score-filter" type="button" data-filter="live" aria-pressed="false">Canlı</button>
+          <button class="score-filter" type="button" data-filter="world-cup" aria-pressed="false">Dünya Kupası</button>
+        </div>
+        <p class="score-message" id="score-message" role="status">Bugünün maçları alınıyor.</p>
+        <div class="score-list" id="score-list" aria-live="polite"></div>
+        <div class="score-source">
+          <span>Skor ve maç verisi:</span>
+          <a href="https://www.thesportsdb.com/" target="_blank" rel="noreferrer">TheSportsDB ↗</a>
+          <span>· 60 sn'de bir kontrol edilir; ücretsiz akışta gecikme olabilir.</span>
         </div>
       </section>
 
