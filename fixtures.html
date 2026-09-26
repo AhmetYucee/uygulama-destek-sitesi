@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Türkiye Süper Lig yaklaşan maç takvimi ve geçmiş performanslara dayalı analizler."
+    />
+    <meta name="theme-color" content="#f5f6f8" />
+    <title>Maç Merkezi | Uygulama Bilgileri</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="fixtures.css" />
+    <script src="fixtures.js" defer></script>
+    <script src="chatbot.js" defer></script>
+  </head>
+  <body class="fixtures-body">
+    <header class="site-header">
+      <a class="brand" href="index.html">Uygulama Bilgileri</a>
+      <nav aria-label="Ana menü">
+        <a href="game.html">Yıldız Nöbeti</a>
+        <a href="match.html">Taç Bahçesi</a>
+        <a aria-current="page" href="fixtures.html">Maç Merkezi</a>
+        <a href="support.html">Destek</a>
+        <a href="privacy.html">Gizlilik</a>
+      </nav>
+    </header>
+
+    <main class="fixtures-shell">
+      <section class="fixtures-hero">
+        <div class="hero-copy">
+          <p class="fixtures-eyebrow"><span aria-hidden="true">◷</span> TÜRKİYE · SÜPER LİG</p>
+          <h1>Maç Merkezi</h1>
+          <p>
+            Yaklaşan karşılaşmalar ve geçmiş performansa dayalı, temkinli maç
+            analizleri.
+          </p>
+        </div>
+        <div class="range-card" aria-label="Takvim aralığı">
+          <span class="range-icon" aria-hidden="true">▦</span>
+          <span><strong>3 haftalık görünüm</strong><small>26 Eylül – 17 Ekim 2026 · TRT</small></span>
+        </div>
+      </section>
+
+      <section class="verification-banner" aria-labelledby="verification-title">
+        <span class="verification-icon" aria-hidden="true">!</span>
+        <div>
+          <h2 id="verification-title">Fikstür doğrulaması bekleniyor</h2>
+          <p>
+            Resmî TFF kaynağında bu aralığa ait tarihli maç listesi doğrulanamadı.
+            Bu, maç olmadığı anlamına gelmez. Yanlış bilgi vermemek için teyitsiz
+            maç veya skor tahmini yayımlamıyoruz.
+          </p>
+        </div>
+      </section>
+
+      <section class="match-dashboard" aria-label="Yaklaşan maçlar ve öne çıkan analizler">
+        <div class="upcoming-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="fixtures-eyebrow">TAKVİM</p>
+              <h2>Yaklaşan maçlar</h2>
+            </div>
+            <span class="live-badge"><span aria-hidden="true"></span> Kaynak kontrolü</span>
+          </div>
+          <div class="empty-fixtures" id="empty-fixtures">
+            <div class="empty-icon" aria-hidden="true">◷</div>
+            <h3>Doğrulanmış maç listesi yok</h3>
+            <p>
+              Tarih, başlama saati ve iki takım da güvenilir bir fikstür
+              kaynağından teyit edilince burada gösterilecek.
+            </p>
+          </div>
+          <div class="fixture-list" id="fixture-list" hidden></div>
+          <div class="source-row">
+            <span>Kontrol tarihi: 26 Eylül 2026</span>
+            <span>·</span>
+            <a href="https://www.tff.org/default.aspx?pageID=198" target="_blank" rel="noreferrer">TFF fikstür kaynağı ↗</a>
+          </div>
+        </div>
+
+        <aside class="picks-panel" aria-labelledby="picks-title">
+          <div class="panel-heading">
+            <div>
+              <p class="fixtures-eyebrow">VERİYE DAYALI</p>
+              <h2 id="picks-title">Öne çıkan 3 maç</h2>
+            </div>
+            <span class="sparkle" aria-hidden="true">✳</span>
+          </div>
+          <p class="picks-intro">
+            En tutarlı tahminler ancak eşleşmeler ve takımların geçmiş verileri
+            doğrulandıktan sonra seçilir.
+          </p>
+          <ol class="pick-list" id="pick-list">
+            <li class="pick-placeholder">
+              <span class="pick-rank">01</span>
+              <span><strong>Maç bekleniyor</strong><small>Fikstür teyidi gerekli</small></span>
+              <span class="pick-confidence">—</span>
+            </li>
+            <li class="pick-placeholder">
+              <span class="pick-rank">02</span>
+              <span><strong>Maç bekleniyor</strong><small>Geçmiş performans gerekli</small></span>
+              <span class="pick-confidence">—</span>
+            </li>
+            <li class="pick-placeholder">
+              <span class="pick-rank">03</span>
+              <span><strong>Maç bekleniyor</strong><small>Form verisi gerekli</small></span>
+              <span class="pick-confidence">—</span>
+            </li>
+          </ol>
+          <p class="method-note">
+            Tahminler kesin sonuç değildir. Veri doğrulanmadığı için şu anda
+            olasılık yüzdesi veya skor üretilmiyor.
+          </p>
+        </aside>
+      </section>
+
+      <section class="method-card" aria-labelledby="method-title">
+        <span class="method-icon" aria-hidden="true">◎</span>
+        <div>
+          <p class="fixtures-eyebrow">ANALİZ YÖNTEMİ</p>
+          <h2 id="method-title">Tahminleri nasıl hazırlıyoruz?</h2>
+          <p>
+            Fikstür doğrulandıktan sonra son maçlardaki form, iç saha/deplasman
+            performansı ve erişilebilir geçmiş karşılaşmalar incelenir. Kaynak
+            ve kontrol tarihi analizle birlikte gösterilir; eksik veri güven
+            düzeyi olarak yansıtılır.
+          </p>
+        </div>
+      </section>
+
+      <p class="disclaimer">
+        Bilgilendirme amaçlıdır; maç sonuçları öngörülemez. Bu sayfa bahis önerisi,
+        kazanç garantisi veya profesyonel tavsiye sunmaz.
+      </p>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 [Geliştirici adı]</span>
+      <span><a href="privacy.html">Gizlilik</a> · <a href="terms.html">Koşullar</a></span>
+    </footer>
+  </body>
+</html>
