@@ -8,41 +8,46 @@
   const filterButtons = [...document.querySelectorAll(".score-filter")];
   const scoreApi = "https://www.thesportsdb.com/api/v1/json/123/eventsday.php";
   const refreshInterval = 60_000;
-  const nationsLeagueMatches = [
-    {
-      date: "2026-09-26T13:00:00Z",
-      home: "Slovenya",
-      away: "İskoçya",
-      homeScore: 0,
-      awayScore: 0,
-      status: "Maç bitti",
-      group: "Grup B1",
-    },
-    {
-      date: "2026-09-27T13:00:00Z",
-      home: "Litvanya",
-      away: "Azerbaycan",
-      status: "Programda",
-      group: "Grup D2",
-    },
-    {
-      date: "2026-09-28T16:00:00Z",
-      home: "Ermenistan",
-      away: "Karadağ",
-      status: "Programda",
-      group: "Grup C2",
-    },
-    {
-      date: "2026-09-29T16:00:00Z",
-      home: "Finlandiya",
-      away: "Belarus",
-      status: "Programda",
-      group: "Grup C1",
-    },
-  ];
+  const nationsLeagueFeed = "nations-league.json";
+  const teamNamesTR = {
+    Albania: "Arnavutluk",
+    Armenia: "Ermenistan",
+    Azerbaijan: "Azerbaycan",
+    Belarus: "Belarus",
+    "Bosnia and Herzegovina": "Bosna-Hersek",
+    Czechia: "Çekya",
+    "Czech Republic": "Çekya",
+    "Faroe Islands": "Faroe Adaları",
+    Finland: "Finlandiya",
+    Georgia: "Gürcistan",
+    Hungary: "Macaristan",
+    Iceland: "İzlanda",
+    Kosovo: "Kosova",
+    Latvia: "Letonya",
+    Lithuania: "Litvanya",
+    Luxembourg: "Lüksemburg",
+    Malta: "Malta",
+    Moldova: "Moldova",
+    Montenegro: "Karadağ",
+    Poland: "Polonya",
+    Romania: "Romanya",
+    Scotland: "İskoçya",
+    Serbia: "Sırbistan",
+    Slovakia: "Slovakya",
+    Slovenia: "Slovenya",
+    "San Marino": "San Marino",
+    Switzerland: "İsviçre",
+    Turkey: "Türkiye",
+    Türkiye: "Türkiye",
+    Ukraine: "Ukrayna",
+  };
   let selectedFilter = "all";
   let latestEvents = [];
   let isLoading = false;
+  let nationsEvents = [];
+  let nationsFeedLoaded = false;
+  let nationsFeedError = false;
+  let nationsFetchedAt = "";
 
   function escapeHTML(value) {
     return String(value ?? "").replace(/[&<>"']/g, (character) => {
@@ -95,46 +100,83 @@
     return event.strTimeLocal || event.strTime || "Programda";
   }
 
+  function formatKickoff(date, options) {
+    return new Intl.DateTimeFormat("tr-TR", {
+      ...options,
+      timeZone: "Europe/Istanbul",
+    }).format(new Date(date));
+  }
+
+  function renderNationsLeague() {
+    if (nationsFeedError && !nationsFeedLoaded) {
+      scoreMessage.textContent = "UEFA Uluslar Ligi fikstür akışı şu anda alınamıyor. Yeniden denemek için Yenile'ye dokunun.";
+      scoreList.replaceChildren();
+      return;
+    }
+
+    if (!nationsFeedLoaded) {
+      scoreMessage.textContent = "UEFA Uluslar Ligi maçları yükleniyor.";
+      scoreList.replaceChildren();
+      return;
+    }
+
+    if (nationsEvents.length === 0) {
+      scoreMessage.textContent = "Son 7 gün ile gelecek 21 gün içinde UEFA Uluslar Ligi maçı bulunamadı.";
+      scoreList.replaceChildren();
+      return;
+    }
+
+    scoreMessage.textContent = nationsFeedError
+      ? `Son başarılı veri gösteriliyor; güncel veri alınamadı. ${nationsEvents.length} maç.`
+      : `Son 7 gün ve gelecek 21 gündeki tüm maçlar · yaklaşık 15 dakikada bir güncellenir · ${nationsEvents.length} maç`;
+    scoreList.innerHTML = nationsEvents
+      .map((event) => {
+        const dateLabel = formatKickoff(event.date, {
+          weekday: "short",
+          day: "numeric",
+          month: "short",
+        });
+        const timeLabel = formatKickoff(event.date, {
+          hour: "2-digit",
+          minute: "2-digit",
+        });
+        const state = event.status?.state;
+        const live = state === "in";
+        const finished = state === "post";
+        const hasScore = state !== "pre" &&
+          event.homeScore !== null &&
+          event.awayScore !== null;
+        const status = live
+          ? `Canlı${event.clock ? ` · ${event.clock}` : ""}`
+          : finished
+            ? "Maç bitti"
+            : `${dateLabel} · ${timeLabel}`;
+        const home = teamNamesTR[event.home] || event.home;
+        const away = teamNamesTR[event.away] || event.away;
+        const group = event.group ? ` · ${event.group}` : "";
+
+        return `
+          <article class="score-card${live ? " is-live" : ""}${finished ? " is-finished" : ""}">
+            <div class="score-card-meta">
+              <span>UEFA Uluslar Ligi${escapeHTML(group)} · ${escapeHTML(dateLabel)}</span>
+              <span class="score-status">${live ? '<i aria-hidden="true"></i>' : ""}${escapeHTML(status)}</span>
+            </div>
+            <div class="score-team-row">
+              <span class="score-team"><strong>${escapeHTML(home)}</strong></span>
+              <strong class="score-number">${hasScore ? escapeHTML(event.homeScore) : "—"}</strong>
+            </div>
+            <div class="score-team-row">
+              <span class="score-team"><strong>${escapeHTML(away)}</strong></span>
+              <strong class="score-number">${hasScore ? escapeHTML(event.awayScore) : "—"}</strong>
+            </div>
+          </article>`;
+      })
+      .join("");
+  }
+
   function renderScores() {
     if (selectedFilter === "nations-league") {
-      scoreUpdated.textContent = "Uluslar Ligi fikstürü: 26 Eyl 2026";
-      scoreMessage.textContent =
-        "Fikstür ESPN program verisinden alınmıştır (26 Eylül 2026). Ücretsiz canlı skor akışında bu lig bulunmadığından başlamamış maçlar sonuç gibi gösterilmez.";
-      scoreList.innerHTML = nationsLeagueMatches
-        .map((match) => {
-          const kickoff = new Date(match.date);
-          const formattedDate = new Intl.DateTimeFormat("tr-TR", {
-            weekday: "short",
-            day: "numeric",
-            month: "short",
-            hour: "2-digit",
-            minute: "2-digit",
-            timeZone: "Europe/Istanbul",
-          }).format(kickoff);
-          const hasResult = Number.isInteger(match.homeScore) && Number.isInteger(match.awayScore);
-          const status = hasResult
-            ? match.status
-            : Date.now() >= kickoff.getTime()
-              ? "Program saati geçti · sonuç akışı yok"
-              : formattedDate;
-
-          return `
-            <article class="score-card${hasResult ? " is-finished" : ""}">
-              <div class="score-card-meta">
-                <span>UEFA Uluslar Ligi · ${escapeHTML(match.group)}</span>
-                <span class="score-status">${escapeHTML(status)}</span>
-              </div>
-              <div class="score-team-row">
-                <span class="score-team"><strong>${escapeHTML(match.home)}</strong></span>
-                <strong class="score-number">${hasResult ? match.homeScore : "—"}</strong>
-              </div>
-              <div class="score-team-row">
-                <span class="score-team"><strong>${escapeHTML(match.away)}</strong></span>
-                <strong class="score-number">${hasResult ? match.awayScore : "—"}</strong>
-              </div>
-            </article>`;
-        })
-        .join("");
+      renderNationsLeague();
       return;
     }
 
@@ -189,6 +231,43 @@
       .join("");
   }
 
+  async function loadNationsLeague() {
+    try {
+      const response = await fetch(`${nationsLeagueFeed}?_=${Date.now()}`, {
+        cache: "no-store",
+        headers: { Accept: "application/json" },
+      });
+
+      if (!response.ok) {
+        throw new Error(`UEFA Uluslar Ligi servisi HTTP ${response.status}`);
+      }
+
+      const data = await response.json();
+      if (!Array.isArray(data.events) || typeof data.fetchedAt !== "string") {
+        throw new Error("UEFA Uluslar Ligi servisi beklenmeyen yanıt verdi.");
+      }
+
+      nationsEvents = data.events;
+      nationsFetchedAt = data.fetchedAt;
+      nationsFeedLoaded = true;
+      nationsFeedError = false;
+      if (selectedFilter === "nations-league") {
+        scoreUpdated.textContent = `Uluslar Ligi · son veri ${formatKickoff(nationsFetchedAt, {
+          hour: "2-digit",
+          minute: "2-digit",
+        })}`;
+      }
+    } catch (error) {
+      console.error("UEFA Uluslar Ligi maçları yüklenemedi:", error);
+      nationsFeedError = true;
+      if (selectedFilter === "nations-league" && !nationsFeedLoaded) {
+        scoreUpdated.textContent = "UEFA Uluslar Ligi verisi alınamadı";
+      }
+    }
+
+    if (selectedFilter === "nations-league") renderScores();
+  }
+
   async function loadScores() {
     if (isLoading) return;
     isLoading = true;
@@ -215,19 +294,19 @@
 
       latestEvents = Array.isArray(data.events) ? data.events : [];
       renderScores();
-      scoreUpdated.textContent = selectedFilter === "nations-league"
-        ? "Uluslar Ligi fikstürü: 26 Eyl 2026"
-        : `Son güncelleme ${new Intl.DateTimeFormat("tr-TR", {
+      if (selectedFilter !== "nations-league") {
+        scoreUpdated.textContent = `Son güncelleme ${new Intl.DateTimeFormat("tr-TR", {
         hour: "2-digit",
         minute: "2-digit",
         timeZone: "Europe/Istanbul",
-      }).format(new Date())}`;
+        }).format(new Date())}`;
+      }
     } catch (error) {
       console.error("Canlı skorlar yüklenemedi:", error);
-      scoreUpdated.textContent = selectedFilter === "nations-league"
-        ? "Genel skor akışı kullanılamıyor"
-        : "Güncelleme başarısız";
-      scoreMessage.textContent = "Skor verisi şu anda alınamıyor. Biraz sonra yeniden deneyin.";
+      if (selectedFilter !== "nations-league") {
+        scoreUpdated.textContent = "Güncelleme başarısız";
+        scoreMessage.textContent = "Skor verisi şu anda alınamıyor. Biraz sonra yeniden deneyin.";
+      }
     } finally {
       isLoading = false;
       refreshButton.disabled = false;
@@ -243,12 +322,25 @@
         filterButton.setAttribute("aria-pressed", String(isSelected));
       });
       renderScores();
+      if (selectedFilter === "nations-league" && nationsFetchedAt) {
+        scoreUpdated.textContent = `Uluslar Ligi · son veri ${formatKickoff(nationsFetchedAt, {
+          hour: "2-digit",
+          minute: "2-digit",
+        })}`;
+      }
     });
   });
 
-  refreshButton.addEventListener("click", loadScores);
+  refreshButton.addEventListener("click", () => {
+    loadScores();
+    loadNationsLeague();
+  });
   loadScores();
-  window.setInterval(loadScores, refreshInterval);
+  loadNationsLeague();
+  window.setInterval(() => {
+    loadScores();
+    loadNationsLeague();
+  }, refreshInterval);
 
   const verifiedFixtures = [
     {
