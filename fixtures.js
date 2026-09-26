@@ -8,6 +8,38 @@
   const filterButtons = [...document.querySelectorAll(".score-filter")];
   const scoreApi = "https://www.thesportsdb.com/api/v1/json/123/eventsday.php";
   const refreshInterval = 60_000;
+  const nationsLeagueMatches = [
+    {
+      date: "2026-09-26T13:00:00Z",
+      home: "Slovenya",
+      away: "İskoçya",
+      homeScore: 0,
+      awayScore: 0,
+      status: "Maç bitti",
+      group: "Grup B1",
+    },
+    {
+      date: "2026-09-27T13:00:00Z",
+      home: "Litvanya",
+      away: "Azerbaycan",
+      status: "Programda",
+      group: "Grup D2",
+    },
+    {
+      date: "2026-09-28T16:00:00Z",
+      home: "Ermenistan",
+      away: "Karadağ",
+      status: "Programda",
+      group: "Grup C2",
+    },
+    {
+      date: "2026-09-29T16:00:00Z",
+      home: "Finlandiya",
+      away: "Belarus",
+      status: "Programda",
+      group: "Grup C1",
+    },
+  ];
   let selectedFilter = "all";
   let latestEvents = [];
   let isLoading = false;
@@ -64,6 +96,47 @@
   }
 
   function renderScores() {
+    if (selectedFilter === "nations-league") {
+      scoreMessage.textContent =
+        "Fikstür ESPN program verisinden alınmıştır (26 Eylül 2026). Ücretsiz canlı skor akışında bu lig bulunmadığından başlamamış maçlar sonuç gibi gösterilmez.";
+      scoreList.innerHTML = nationsLeagueMatches
+        .map((match) => {
+          const kickoff = new Date(match.date);
+          const formattedDate = new Intl.DateTimeFormat("tr-TR", {
+            weekday: "short",
+            day: "numeric",
+            month: "short",
+            hour: "2-digit",
+            minute: "2-digit",
+            timeZone: "Europe/Istanbul",
+          }).format(kickoff);
+          const hasResult = Number.isInteger(match.homeScore) && Number.isInteger(match.awayScore);
+          const status = hasResult
+            ? match.status
+            : Date.now() >= kickoff.getTime()
+              ? "Program saati geçti · sonuç akışı yok"
+              : formattedDate;
+
+          return `
+            <article class="score-card${hasResult ? " is-finished" : ""}">
+              <div class="score-card-meta">
+                <span>UEFA Uluslar Ligi · ${escapeHTML(match.group)}</span>
+                <span class="score-status">${escapeHTML(status)}</span>
+              </div>
+              <div class="score-team-row">
+                <span class="score-team"><strong>${escapeHTML(match.home)}</strong></span>
+                <strong class="score-number">${hasResult ? match.homeScore : "—"}</strong>
+              </div>
+              <div class="score-team-row">
+                <span class="score-team"><strong>${escapeHTML(match.away)}</strong></span>
+                <strong class="score-number">${hasResult ? match.awayScore : "—"}</strong>
+              </div>
+            </article>`;
+        })
+        .join("");
+      return;
+    }
+
     const visibleEvents = latestEvents.filter((event) => {
       if (selectedFilter === "live") return isLiveEvent(event);
       if (selectedFilter === "world-cup") {

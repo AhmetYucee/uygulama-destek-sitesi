@@ -118,6 +118,11 @@
   background: #fffafa;
 }
 
+.score-card.is-finished {
+  border-color: #dce9e0;
+  background: #fbfdfb;
+}
+
 .score-card-meta {
   display: flex;
   align-items: center;

@@ -10,8 +10,8 @@
     <meta name="theme-color" content="#f5f6f8" />
     <title>Maç Merkezi | Uygulama Bilgileri</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="fixtures.css?v=20260926-live2" />
-    <script src="fixtures.js?v=20260926-live2" defer></script>
+    <link rel="stylesheet" href="fixtures.css?v=20260926-live3" />
+    <script src="fixtures.js?v=20260926-live3" defer></script>
     <script src="chatbot.js" defer></script>
   </head>
   <body class="fixtures-body">
@@ -57,13 +57,16 @@
           <button class="score-filter is-active" type="button" data-filter="all" aria-pressed="true">Tüm maçlar</button>
           <button class="score-filter" type="button" data-filter="live" aria-pressed="false">Canlı</button>
           <button class="score-filter" type="button" data-filter="world-cup" aria-pressed="false">Dünya Kupası</button>
+          <button class="score-filter" type="button" data-filter="nations-league" aria-pressed="false">UEFA Uluslar Ligi</button>
         </div>
         <p class="score-message" id="score-message" role="status">Bugünün maçları alınıyor.</p>
         <div class="score-list" id="score-list" aria-live="polite"></div>
         <div class="score-source">
-          <span>Skor ve maç verisi:</span>
+          <span>Genel skorlar:</span>
           <a href="https://www.thesportsdb.com/" target="_blank" rel="noreferrer">TheSportsDB ↗</a>
-          <span>· 60 sn'de bir kontrol edilir; ücretsiz akışta gecikme olabilir.</span>
+          <span>· Uluslar Ligi fikstürü:</span>
+          <a href="https://www.espn.com/soccer/fixtures/_/league/uefa.nations" target="_blank" rel="noreferrer">ESPN ↗</a>
+          <span>· Genel skorlar 60 sn'de bir kontrol edilir; ücretsiz akışta gecikme olabilir.</span>
         </div>
       </section>
 
