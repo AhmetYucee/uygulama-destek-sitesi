@@ -153,7 +153,8 @@
             : `${dateLabel} · ${timeLabel}`;
         const home = teamNamesTR[event.home] || event.home;
         const away = teamNamesTR[event.away] || event.away;
-        const group = event.group ? ` · ${event.group}` : "";
+        const groupName = event.group?.replace(/^Group\b/i, "Grup");
+        const group = groupName ? ` · ${groupName}` : "";
 
         return `
           <article class="score-card${live ? " is-live" : ""}${finished ? " is-finished" : ""}">
