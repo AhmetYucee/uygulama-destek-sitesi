@@ -6,6 +6,9 @@
   const scoreUpdated = document.querySelector("#live-update");
   const refreshButton = document.querySelector("#refresh-scores");
   const filterButtons = [...document.querySelectorAll(".score-filter")];
+  const nationsDashboard = document.querySelector("#nations-dashboard");
+  const nationsGroupFilter = document.querySelector("#nations-group-filter");
+  const nationsStatusButtons = [...document.querySelectorAll(".nations-status-button")];
   const scoreApi = "https://www.thesportsdb.com/api/v1/json/123/eventsday.php";
   const refreshInterval = 60_000;
   const nationsLeagueFeed = "nations-league.json";
@@ -75,6 +78,7 @@
   let nationsFeedLoaded = false;
   let nationsFeedError = false;
   let nationsFetchedAt = "";
+  let selectedNationsStatus = "all";
 
   function escapeHTML(value) {
     return String(value ?? "").replace(/[&<>"']/g, (character) => {
@@ -135,6 +139,9 @@
   }
 
   function renderNationsLeague() {
+    nationsDashboard.hidden = !nationsFeedLoaded;
+    scoreList.classList.toggle("nations-score-list", nationsFeedLoaded);
+
     if (nationsFeedError && !nationsFeedLoaded) {
       scoreMessage.textContent = "UEFA Uluslar Ligi fikstür akışı şu anda alınamıyor. Yeniden denemek için Yenile'ye dokunun.";
       scoreList.replaceChildren();
@@ -147,16 +154,45 @@
       return;
     }
 
-    if (nationsEvents.length === 0) {
-      scoreMessage.textContent = "Son 7 gün ile gelecek 21 gün içinde UEFA Uluslar Ligi maçı bulunamadı.";
+    const groupOptions = [...new Set(nationsEvents.map((event) => event.group).filter(Boolean))]
+      .sort((left, right) => left.localeCompare(right, "en"));
+    const currentGroup = nationsGroupFilter.value;
+    nationsGroupFilter.innerHTML = '<option value="all">Tüm gruplar</option>' +
+      groupOptions.map((group) => {
+        const label = group.replace(/^Group\b/i, "Grup");
+        return `<option value="${escapeHTML(group)}">${escapeHTML(label)}</option>`;
+      }).join("");
+    nationsGroupFilter.value = groupOptions.includes(currentGroup) ? currentGroup : "all";
+
+    const summary = {
+      all: nationsEvents.length,
+      in: nationsEvents.filter((event) => event.status?.state === "in").length,
+      post: nationsEvents.filter((event) => event.status?.state === "post").length,
+      pre: nationsEvents.filter((event) => event.status?.state === "pre").length,
+    };
+    document.querySelector("#nations-summary").innerHTML = `
+      <div class="nations-stat nations-stat-live"><span class="nations-stat-indicator"></span><strong>${summary.in}</strong><span>Canlı</span></div>
+      <div class="nations-stat"><strong>${summary.post}</strong><span>Tamamlandı</span></div>
+      <div class="nations-stat"><strong>${summary.pre}</strong><span>Programda</span></div>`;
+
+    const visibleEvents = nationsEvents.filter((event) => {
+      const matchesGroup = nationsGroupFilter.value === "all" ||
+        event.group === nationsGroupFilter.value;
+      const matchesStatus = selectedNationsStatus === "all" ||
+        event.status?.state === selectedNationsStatus;
+      return matchesGroup && matchesStatus;
+    });
+
+    if (visibleEvents.length === 0) {
+      scoreMessage.textContent = "Bu grup ve maç durumu için gösterilecek karşılaşma yok.";
       scoreList.replaceChildren();
       return;
     }
 
     scoreMessage.textContent = nationsFeedError
-      ? `Son başarılı veri gösteriliyor; güncel veri alınamadı. ${nationsEvents.length} maç.`
-      : `Son 7 gün ve gelecek 21 gündeki tüm maçlar · yaklaşık 15 dakikada bir güncellenir · ${nationsEvents.length} maç`;
-    scoreList.innerHTML = nationsEvents
+      ? `Son başarılı veri gösteriliyor; güncel veri alınamadı. ${visibleEvents.length} maç listeleniyor.`
+      : `${visibleEvents.length} maç listeleniyor · Son 7 gün ve gelecek 21 gün`;
+    scoreList.innerHTML = visibleEvents
       .map((event) => {
         const dateLabel = formatKickoff(event.date, {
           weekday: "short",
@@ -177,26 +213,27 @@
           ? `Canlı${event.clock ? ` · ${event.clock}` : ""}`
           : finished
             ? "Maç bitti"
-            : `${dateLabel} · ${timeLabel}`;
+            : timeLabel;
         const home = teamNamesTR[event.home] || event.home;
         const away = teamNamesTR[event.away] || event.away;
         const groupName = event.group?.replace(/^Group\b/i, "Grup");
-        const group = groupName ? ` · ${groupName}` : "";
+        const score = hasScore
+          ? `<strong>${escapeHTML(event.homeScore)}</strong><span aria-hidden="true">:</span><strong>${escapeHTML(event.awayScore)}</strong>`
+          : '<span class="nations-versus">VS</span>';
+        const stateClass = live ? " is-live" : finished ? " is-finished" : "";
 
         return `
-          <article class="score-card${live ? " is-live" : ""}${finished ? " is-finished" : ""}">
+          <article class="score-card nations-match-card${stateClass}">
             <div class="score-card-meta">
-              <span>UEFA Uluslar Ligi${escapeHTML(group)} · ${escapeHTML(dateLabel)}</span>
+              <span class="nations-card-context"><span class="nations-group-tag">${escapeHTML(groupName || "Uluslar Ligi")}</span><span>${escapeHTML(dateLabel)}</span></span>
               <span class="score-status">${live ? '<i aria-hidden="true"></i>' : ""}${escapeHTML(status)}</span>
             </div>
-            <div class="score-team-row">
-              <span class="score-team"><strong>${escapeHTML(home)}</strong></span>
-              <strong class="score-number">${hasScore ? escapeHTML(event.homeScore) : "—"}</strong>
+            <div class="nations-matchup">
+              <div class="nations-team"><strong>${escapeHTML(home)}</strong></div>
+              <div class="nations-scoreline">${score}</div>
+              <div class="nations-team"><strong>${escapeHTML(away)}</strong></div>
             </div>
-            <div class="score-team-row">
-              <span class="score-team"><strong>${escapeHTML(away)}</strong></span>
-              <strong class="score-number">${hasScore ? escapeHTML(event.awayScore) : "—"}</strong>
-            </div>
+            <div class="nations-card-footer"><span>UEFA Uluslar Ligi</span><span>${live ? "Şu anda oynanıyor" : finished ? "Karşılaşma tamamlandı" : "Başlama · TRT"}</span></div>
           </article>`;
       })
       .join("");
@@ -356,6 +393,19 @@
           minute: "2-digit",
         })}`;
       }
+    });
+  });
+
+  nationsGroupFilter.addEventListener("change", renderNationsLeague);
+  nationsStatusButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      selectedNationsStatus = button.dataset.nationsStatus;
+      nationsStatusButtons.forEach((statusButton) => {
+        const selected = statusButton === button;
+        statusButton.classList.toggle("is-active", selected);
+        statusButton.setAttribute("aria-pressed", String(selected));
+      });
+      renderNationsLeague();
     });
   });
 

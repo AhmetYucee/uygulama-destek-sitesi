@@ -10,8 +10,8 @@
     <meta name="theme-color" content="#f5f6f8" />
     <title>Maç Merkezi | Uygulama Bilgileri</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="fixtures.css?v=20260926-live7" />
-    <script src="fixtures.js?v=20260926-live7" defer></script>
+    <link rel="stylesheet" href="fixtures.css?v=20260926-live8" />
+    <script src="fixtures.js?v=20260926-live8" defer></script>
     <script src="chatbot.js" defer></script>
   </head>
   <body class="fixtures-body">
@@ -58,6 +58,23 @@
           <button class="score-filter" type="button" data-filter="live" aria-pressed="false">Canlı</button>
           <button class="score-filter" type="button" data-filter="world-cup" aria-pressed="false">Dünya Kupası</button>
           <button class="score-filter" type="button" data-filter="nations-league" aria-pressed="false">UEFA Uluslar Ligi</button>
+        </div>
+        <div class="nations-dashboard" id="nations-dashboard" hidden>
+          <div class="nations-controls">
+            <label class="nations-group-control" for="nations-group-filter">
+              <span>Grup seç</span>
+              <select id="nations-group-filter" aria-label="Uluslar Ligi grubu">
+                <option value="all">Tüm gruplar</option>
+              </select>
+            </label>
+            <div class="nations-status-filter" role="group" aria-label="Maç durumu">
+              <button class="nations-status-button is-active" type="button" data-nations-status="all" aria-pressed="true">Tümü</button>
+              <button class="nations-status-button" type="button" data-nations-status="in" aria-pressed="false">Canlı</button>
+              <button class="nations-status-button" type="button" data-nations-status="post" aria-pressed="false">Biten</button>
+              <button class="nations-status-button" type="button" data-nations-status="pre" aria-pressed="false">Başlamayan</button>
+            </div>
+          </div>
+          <div class="nations-summary" id="nations-summary" aria-label="Maç özeti"></div>
         </div>
         <p class="score-message" id="score-message" role="status">Bugünün maçları alınıyor.</p>
         <div class="score-list" id="score-list" aria-live="polite"></div>
