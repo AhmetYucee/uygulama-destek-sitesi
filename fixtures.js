@@ -6,7 +6,7 @@
   const scoreUpdated = document.querySelector("#live-update");
   const refreshButton = document.querySelector("#refresh-scores");
   const filterButtons = [...document.querySelectorAll(".score-filter")];
-  const scoreApi = "https://www.thesportsdb.com/api/v1/json/3/eventsday.php";
+  const scoreApi = "https://www.thesportsdb.com/api/v1/json/123/eventsday.php";
   const refreshInterval = 60_000;
   let selectedFilter = "all";
   let latestEvents = [];
