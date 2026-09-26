@@ -1,8 +1,8 @@
 {
   "source": "ESPN",
-  "fetchedAt": "2026-09-26T18:53:16+00:00",
-  "from": "2026-09-19",
-  "through": "2026-10-17",
+  "fetchedAt": "2026-09-26T21:55:21+00:00",
+  "from": "2026-09-20",
+  "through": "2026-10-18",
   "events": [
     {
       "id": "401861047",
@@ -303,42 +303,42 @@
       "date": "2026-09-26T18:45Z",
       "home": "Albania",
       "away": "Belarus",
-      "homeScore": "0",
+      "homeScore": "2",
       "awayScore": "0",
       "group": "Group C1",
       "status": {
-        "state": "in",
-        "detail": "3'"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "3'"
+      "clock": "90'+4'"
     },
     {
       "id": "401861063",
       "date": "2026-09-26T18:45Z",
       "home": "Czechia",
       "away": "Croatia",
-      "homeScore": "0",
-      "awayScore": "0",
+      "homeScore": "1",
+      "awayScore": "2",
       "group": "Group A3",
       "status": {
-        "state": "in",
-        "detail": "7'"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "7'"
+      "clock": "90'+5'"
     },
     {
       "id": "401861066",
       "date": "2026-09-26T18:45Z",
       "home": "England",
       "away": "Spain",
-      "homeScore": "0",
-      "awayScore": "1",
+      "homeScore": "2",
+      "awayScore": "3",
       "group": "Group A3",
       "status": {
-        "state": "in",
-        "detail": "4'"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "4'"
+      "clock": "90'+6'"
     },
     {
       "id": "401861065",
@@ -346,27 +346,27 @@
       "home": "North Macedonia",
       "away": "Switzerland",
       "homeScore": "0",
-      "awayScore": "0",
+      "awayScore": "3",
       "group": "Group B1",
       "status": {
-        "state": "in",
-        "detail": "5'"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "5'"
+      "clock": "90'+4'"
     },
     {
       "id": "401861064",
       "date": "2026-09-26T18:45Z",
       "home": "Slovakia",
       "away": "Moldova",
-      "homeScore": "0",
+      "homeScore": "2",
       "awayScore": "0",
       "group": "Group C3",
       "status": {
-        "state": "in",
-        "detail": "7'"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "7'"
+      "clock": "90'+4'"
     },
     {
       "id": "401861067",
