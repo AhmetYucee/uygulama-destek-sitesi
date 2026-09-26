@@ -1,0 +1,44 @@
+name: Update UEFA Nations League scores
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - update-nations-league.py
+      - .github/workflows/update-nations-league.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nations-league-score-update
+  cancel-in-progress: true
+
+jobs:
+  update-score-feed:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Fetch complete scoreboard window
+        run: python update-nations-league.py
+
+      - name: Publish changed scoreboard
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add nations-league.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update UEFA Nations League scoreboard"
+            git push
+          fi
