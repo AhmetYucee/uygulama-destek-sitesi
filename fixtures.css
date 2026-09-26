@@ -205,6 +205,10 @@
   text-align: center;
 }
 
+.empty-fixtures[hidden] {
+  display: none;
+}
+
 .empty-icon {
   display: grid;
   width: 45px;
@@ -233,6 +237,65 @@
 
 .fixture-list[hidden] {
   display: none;
+}
+
+.fixture-list {
+  display: grid;
+  gap: 8px;
+  margin: 17px 0;
+}
+
+.fixture-card {
+  display: grid;
+  grid-template-columns: 62px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  min-height: 61px;
+  padding: 10px 12px;
+  border: 1px solid #edf0f4;
+  border-radius: 12px;
+  background: #fbfcfd;
+}
+
+.fixture-time strong,
+.fixture-time span {
+  display: block;
+}
+
+.fixture-time strong {
+  color: #414b5a;
+  font-size: 10px;
+  text-transform: capitalize;
+}
+
+.fixture-time span {
+  margin-top: 4px;
+  color: #7d8795;
+  font-size: 10px;
+  font-variant-numeric: tabular-nums;
+}
+
+.fixture-teams {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+  color: #939ba7;
+  font-size: 10px;
+}
+
+.fixture-teams strong {
+  color: #303948;
+  font-size: 11px;
+}
+
+.fixture-status {
+  padding: 5px 8px;
+  border-radius: 999px;
+  background: #eef4ed;
+  color: #5d8059;
+  font-size: 9px;
+  white-space: nowrap;
 }
 
 .source-row {
@@ -286,6 +349,46 @@
   border: 1px solid #edf0f4;
   border-radius: 11px;
   background: #fafbfc;
+}
+
+.pick-card {
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr);
+  align-items: start;
+  gap: 8px 9px;
+  min-height: 62px;
+  padding: 10px;
+  border: 1px solid #e9edf3;
+  border-radius: 11px;
+  background: #fafbfc;
+}
+
+.pick-details strong,
+.pick-details small {
+  display: block;
+}
+
+.pick-details strong {
+  color: #414b59;
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.pick-details small {
+  margin-top: 4px;
+  color: #858e9b;
+  font-size: 9px;
+  line-height: 1.5;
+}
+
+.pick-card .pick-confidence {
+  grid-column: 2;
+  justify-self: start;
+  padding: 4px 7px;
+  border-radius: 999px;
+  background: #eef3fa;
+  color: #4c6d9c;
+  font-size: 9px;
 }
 
 .pick-rank {
@@ -411,6 +514,17 @@
 
   .empty-fixtures {
     min-height: 170px;
+  }
+
+  .fixture-card {
+    grid-template-columns: 52px minmax(0, 1fr);
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .fixture-status {
+    grid-column: 2;
+    justify-self: start;
   }
 
   .method-card {
