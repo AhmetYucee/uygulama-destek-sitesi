@@ -1,6 +1,6 @@
 {
   "source": "ESPN",
-  "fetchedAt": "2026-09-27T15:36:09+00:00",
+  "fetchedAt": "2026-09-27T19:18:43+00:00",
   "from": "2026-09-20",
   "through": "2026-10-18",
   "events": [
@@ -387,28 +387,28 @@
       "date": "2026-09-27T16:00Z",
       "home": "Austria",
       "away": "Kosovo",
-      "homeScore": "0",
-      "awayScore": "0",
+      "homeScore": "3",
+      "awayScore": "1",
       "group": "Group B3",
       "status": {
-        "state": "pre",
-        "detail": "Sun, September 27th at 12:00 PM EDT"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "0'"
+      "clock": "90'+6'"
     },
     {
       "id": "401861070",
       "date": "2026-09-27T16:00Z",
       "home": "Denmark",
       "away": "Wales",
-      "homeScore": "0",
+      "homeScore": "2",
       "awayScore": "0",
       "group": "Group A4",
       "status": {
-        "state": "pre",
-        "detail": "Sun, September 27th at 12:00 PM EDT"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "0'"
+      "clock": "90'+4'"
     },
     {
       "id": "401861069",
@@ -419,24 +419,24 @@
       "awayScore": "0",
       "group": "Group D1",
       "status": {
-        "state": "pre",
-        "detail": "Sun, September 27th at 12:00 PM EDT"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "0'"
+      "clock": "90'+4'"
     },
     {
       "id": "401861068",
       "date": "2026-09-27T16:00Z",
       "home": "Serbia",
       "away": "Netherlands",
-      "homeScore": "0",
-      "awayScore": "0",
+      "homeScore": "1",
+      "awayScore": "2",
       "group": "Group A2",
       "status": {
-        "state": "pre",
-        "detail": "Sun, September 27th at 12:00 PM EDT"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "0'"
+      "clock": "90'+3'"
     },
     {
       "id": "401861074",
@@ -447,10 +447,10 @@
       "awayScore": "0",
       "group": "Group A2",
       "status": {
-        "state": "pre",
-        "detail": "Sun, September 27th at 2:45 PM EDT"
+        "state": "in",
+        "detail": "31'"
       },
-      "clock": "0'"
+      "clock": "31'"
     },
     {
       "id": "401861072",
@@ -458,13 +458,13 @@
       "home": "Israel",
       "away": "Republic of Ireland",
       "homeScore": "0",
-      "awayScore": "0",
+      "awayScore": "3",
       "group": "Group B3",
       "status": {
-        "state": "pre",
-        "detail": "Sun, September 27th at 2:45 PM EDT"
+        "state": "in",
+        "detail": "33'"
       },
-      "clock": "0'"
+      "clock": "33'"
     },
     {
       "id": "401861073",
@@ -472,13 +472,13 @@
       "home": "Norway",
       "away": "Portugal",
       "homeScore": "0",
-      "awayScore": "0",
+      "awayScore": "1",
       "group": "Group A4",
       "status": {
-        "state": "pre",
-        "detail": "Sun, September 27th at 2:45 PM EDT"
+        "state": "in",
+        "detail": "33'"
       },
-      "clock": "0'"
+      "clock": "33'"
     },
     {
       "id": "401861076",
