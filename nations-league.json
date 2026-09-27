@@ -1,6 +1,6 @@
 {
   "source": "ESPN",
-  "fetchedAt": "2026-09-27T10:48:27+00:00",
+  "fetchedAt": "2026-09-27T15:36:09+00:00",
   "from": "2026-09-20",
   "through": "2026-10-18",
   "events": [
@@ -373,14 +373,14 @@
       "date": "2026-09-27T13:00Z",
       "home": "Lithuania",
       "away": "Azerbaijan",
-      "homeScore": "0",
-      "awayScore": "0",
+      "homeScore": "1",
+      "awayScore": "1",
       "group": "Group D2",
       "status": {
-        "state": "pre",
-        "detail": "Sun, September 27th at 9:00 AM EDT"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "0'"
+      "clock": "90'+3'"
     },
     {
       "id": "401861071",
