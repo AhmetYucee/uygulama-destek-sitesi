@@ -1,8 +1,8 @@
 {
   "source": "ESPN",
-  "fetchedAt": "2026-09-27T19:18:43+00:00",
-  "from": "2026-09-20",
-  "through": "2026-10-18",
+  "fetchedAt": "2026-09-27T22:31:09+00:00",
+  "from": "2026-09-21",
+  "through": "2026-10-19",
   "events": [
     {
       "id": "401861047",
@@ -444,13 +444,13 @@
       "home": "Germany",
       "away": "Greece",
       "homeScore": "0",
-      "awayScore": "0",
+      "awayScore": "1",
       "group": "Group A2",
       "status": {
-        "state": "in",
-        "detail": "31'"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "31'"
+      "clock": "90'+5'"
     },
     {
       "id": "401861072",
@@ -461,24 +461,24 @@
       "awayScore": "3",
       "group": "Group B3",
       "status": {
-        "state": "in",
-        "detail": "33'"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "33'"
+      "clock": "90'+2'"
     },
     {
       "id": "401861073",
       "date": "2026-09-27T18:45Z",
       "home": "Norway",
       "away": "Portugal",
-      "homeScore": "0",
-      "awayScore": "1",
+      "homeScore": "1",
+      "awayScore": "2",
       "group": "Group A4",
       "status": {
-        "state": "in",
-        "detail": "33'"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "33'"
+      "clock": "90'+7'"
     },
     {
       "id": "401861076",
