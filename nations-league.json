@@ -1,6 +1,6 @@
 {
   "source": "ESPN",
-  "fetchedAt": "2026-09-29T14:00:18+00:00",
+  "fetchedAt": "2026-09-29T19:20:48+00:00",
   "from": "2026-09-22",
   "through": "2026-10-20",
   "events": [
@@ -601,24 +601,24 @@
       "awayScore": "0",
       "group": "Group C1",
       "status": {
-        "state": "pre",
-        "detail": "Tue, September 29th at 12:00 PM EDT"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "0'"
+      "clock": "90'+7'"
     },
     {
       "id": "401861090",
       "date": "2026-09-29T16:00Z",
       "home": "Moldova",
       "away": "Faroe Islands",
-      "homeScore": "0",
-      "awayScore": "0",
+      "homeScore": "1",
+      "awayScore": "1",
       "group": "Group C3",
       "status": {
-        "state": "pre",
-        "detail": "Tue, September 29th at 12:00 PM EDT"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "0'"
+      "clock": "90'+4'"
     },
     {
       "id": "401861083",
@@ -629,10 +629,10 @@
       "awayScore": "0",
       "group": "Group C4",
       "status": {
-        "state": "pre",
-        "detail": "Tue, September 29th at 2:45 PM EDT"
+        "state": "in",
+        "detail": "35'"
       },
-      "clock": "0'"
+      "clock": "35'"
     },
     {
       "id": "401861092",
@@ -643,10 +643,10 @@
       "awayScore": "0",
       "group": "Group A3",
       "status": {
-        "state": "pre",
-        "detail": "Tue, September 29th at 2:45 PM EDT"
+        "state": "in",
+        "detail": "34'"
       },
-      "clock": "0'"
+      "clock": "34'"
     },
     {
       "id": "401861086",
@@ -654,13 +654,13 @@
       "home": "Luxembourg",
       "away": "Iceland",
       "homeScore": "0",
-      "awayScore": "0",
+      "awayScore": "1",
       "group": "Group C4",
       "status": {
-        "state": "pre",
-        "detail": "Tue, September 29th at 2:45 PM EDT"
+        "state": "in",
+        "detail": "34'"
       },
-      "clock": "0'"
+      "clock": "34'"
     },
     {
       "id": "401861088",
@@ -668,13 +668,13 @@
       "home": "San Marino",
       "away": "Albania",
       "homeScore": "0",
-      "awayScore": "0",
+      "awayScore": "2",
       "group": "Group C1",
       "status": {
-        "state": "pre",
-        "detail": "Tue, September 29th at 2:45 PM EDT"
+        "state": "in",
+        "detail": "33'"
       },
-      "clock": "0'"
+      "clock": "33'"
     },
     {
       "id": "401861091",
@@ -682,27 +682,27 @@
       "home": "Scotland",
       "away": "Switzerland",
       "homeScore": "0",
-      "awayScore": "0",
+      "awayScore": "1",
       "group": "Group B1",
       "status": {
-        "state": "pre",
-        "detail": "Tue, September 29th at 2:45 PM EDT"
+        "state": "in",
+        "detail": "34'"
       },
-      "clock": "0'"
+      "clock": "34'"
     },
     {
       "id": "401861085",
       "date": "2026-09-29T18:45Z",
       "home": "Slovakia",
       "away": "Kazakhstan",
-      "homeScore": "0",
+      "homeScore": "1",
       "awayScore": "0",
       "group": "Group C3",
       "status": {
-        "state": "pre",
-        "detail": "Tue, September 29th at 2:45 PM EDT"
+        "state": "in",
+        "detail": "35'"
       },
-      "clock": "0'"
+      "clock": "35'"
     },
     {
       "id": "401861087",
@@ -713,24 +713,24 @@
       "awayScore": "0",
       "group": "Group B1",
       "status": {
-        "state": "pre",
-        "detail": "Tue, September 29th at 2:45 PM EDT"
+        "state": "in",
+        "detail": "35'"
       },
-      "clock": "0'"
+      "clock": "35'"
     },
     {
       "id": "401861084",
       "date": "2026-09-29T18:45Z",
       "home": "Spain",
       "away": "Croatia",
-      "homeScore": "0",
-      "awayScore": "0",
+      "homeScore": "2",
+      "awayScore": "1",
       "group": "Group A3",
       "status": {
-        "state": "pre",
-        "detail": "Tue, September 29th at 2:45 PM EDT"
+        "state": "in",
+        "detail": "34'"
       },
-      "clock": "0'"
+      "clock": "34'"
     },
     {
       "id": "401861093",
