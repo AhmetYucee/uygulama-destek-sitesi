@@ -1,8 +1,8 @@
 {
   "source": "ESPN",
-  "fetchedAt": "2026-09-29T19:20:48+00:00",
-  "from": "2026-09-22",
-  "through": "2026-10-20",
+  "fetchedAt": "2026-09-29T23:08:06+00:00",
+  "from": "2026-09-23",
+  "through": "2026-10-21",
   "events": [
     {
       "id": "401861047",
@@ -629,10 +629,10 @@
       "awayScore": "0",
       "group": "Group C4",
       "status": {
-        "state": "in",
-        "detail": "35'"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "35'"
+      "clock": "90'+4'"
     },
     {
       "id": "401861092",
@@ -640,13 +640,13 @@
       "home": "Czechia",
       "away": "England",
       "homeScore": "0",
-      "awayScore": "0",
+      "awayScore": "2",
       "group": "Group A3",
       "status": {
-        "state": "in",
-        "detail": "34'"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "34'"
+      "clock": "90'+3'"
     },
     {
       "id": "401861086",
@@ -654,13 +654,13 @@
       "home": "Luxembourg",
       "away": "Iceland",
       "homeScore": "0",
-      "awayScore": "1",
+      "awayScore": "3",
       "group": "Group C4",
       "status": {
-        "state": "in",
-        "detail": "34'"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "34'"
+      "clock": "90'+3'"
     },
     {
       "id": "401861088",
@@ -668,13 +668,13 @@
       "home": "San Marino",
       "away": "Albania",
       "homeScore": "0",
-      "awayScore": "2",
+      "awayScore": "3",
       "group": "Group C1",
       "status": {
-        "state": "in",
-        "detail": "33'"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "33'"
+      "clock": "90'+2'"
     },
     {
       "id": "401861091",
@@ -682,55 +682,55 @@
       "home": "Scotland",
       "away": "Switzerland",
       "homeScore": "0",
-      "awayScore": "1",
+      "awayScore": "3",
       "group": "Group B1",
       "status": {
-        "state": "in",
-        "detail": "34'"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "34'"
+      "clock": "90'+4'"
     },
     {
       "id": "401861085",
       "date": "2026-09-29T18:45Z",
       "home": "Slovakia",
       "away": "Kazakhstan",
-      "homeScore": "1",
-      "awayScore": "0",
+      "homeScore": "2",
+      "awayScore": "1",
       "group": "Group C3",
       "status": {
-        "state": "in",
-        "detail": "35'"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "35'"
+      "clock": "90'+4'"
     },
     {
       "id": "401861087",
       "date": "2026-09-29T18:45Z",
       "home": "Slovenia",
       "away": "North Macedonia",
-      "homeScore": "0",
+      "homeScore": "2",
       "awayScore": "0",
       "group": "Group B1",
       "status": {
-        "state": "in",
-        "detail": "35'"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "35'"
+      "clock": "90'+4'"
     },
     {
       "id": "401861084",
       "date": "2026-09-29T18:45Z",
       "home": "Spain",
       "away": "Croatia",
-      "homeScore": "2",
+      "homeScore": "4",
       "awayScore": "1",
       "group": "Group A3",
       "status": {
-        "state": "in",
-        "detail": "34'"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "34'"
+      "clock": "90'+2'"
     },
     {
       "id": "401861093",
