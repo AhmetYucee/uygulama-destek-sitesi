@@ -1,6 +1,6 @@
 {
   "source": "ESPN",
-  "fetchedAt": "2026-10-01T13:23:34+00:00",
+  "fetchedAt": "2026-10-01T18:59:48+00:00",
   "from": "2026-09-24",
   "through": "2026-10-22",
   "events": [
@@ -741,10 +741,10 @@
       "awayScore": "0",
       "group": "Group D2",
       "status": {
-        "state": "pre",
-        "detail": "Thu, October 1st at 12:00 PM EDT"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "0'"
+      "clock": "90'+4'"
     },
     {
       "id": "401861096",
@@ -755,10 +755,10 @@
       "awayScore": "0",
       "group": "Group A4",
       "status": {
-        "state": "pre",
-        "detail": "Thu, October 1st at 2:45 PM EDT"
+        "state": "in",
+        "detail": "11'"
       },
-      "clock": "0'"
+      "clock": "11'"
     },
     {
       "id": "401861097",
@@ -769,10 +769,10 @@
       "awayScore": "0",
       "group": "Group A2",
       "status": {
-        "state": "pre",
-        "detail": "Thu, October 1st at 2:45 PM EDT"
+        "state": "in",
+        "detail": "13'"
       },
-      "clock": "0'"
+      "clock": "13'"
     },
     {
       "id": "401861098",
@@ -783,10 +783,10 @@
       "awayScore": "0",
       "group": "Group A2",
       "status": {
-        "state": "pre",
-        "detail": "Thu, October 1st at 2:45 PM EDT"
+        "state": "in",
+        "detail": "13'"
       },
-      "clock": "0'"
+      "clock": "13'"
     },
     {
       "id": "401861095",
@@ -797,10 +797,10 @@
       "awayScore": "0",
       "group": "Group B3",
       "status": {
-        "state": "pre",
-        "detail": "Thu, October 1st at 2:45 PM EDT"
+        "state": "in",
+        "detail": "12'"
       },
-      "clock": "0'"
+      "clock": "12'"
     },
     {
       "id": "401861099",
@@ -811,24 +811,24 @@
       "awayScore": "0",
       "group": "Group D1",
       "status": {
-        "state": "pre",
-        "detail": "Thu, October 1st at 2:45 PM EDT"
+        "state": "in",
+        "detail": "13'"
       },
-      "clock": "0'"
+      "clock": "13'"
     },
     {
       "id": "401861094",
       "date": "2026-10-01T18:45Z",
       "home": "Republic of Ireland",
       "away": "Austria",
-      "homeScore": "0",
+      "homeScore": "1",
       "awayScore": "0",
       "group": "Group B3",
       "status": {
-        "state": "pre",
-        "detail": "Thu, October 1st at 2:45 PM EDT"
+        "state": "in",
+        "detail": "13'"
       },
-      "clock": "0'"
+      "clock": "13'"
     },
     {
       "id": "401861100",
@@ -836,13 +836,13 @@
       "home": "Wales",
       "away": "Norway",
       "homeScore": "0",
-      "awayScore": "0",
+      "awayScore": "1",
       "group": "Group A4",
       "status": {
-        "state": "pre",
-        "detail": "Thu, October 1st at 2:45 PM EDT"
+        "state": "in",
+        "detail": "15'"
       },
-      "clock": "0'"
+      "clock": "15'"
     },
     {
       "id": "401861101",
