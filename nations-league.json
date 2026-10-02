@@ -1,6 +1,6 @@
 {
   "source": "ESPN",
-  "fetchedAt": "2026-10-02T15:39:40+00:00",
+  "fetchedAt": "2026-10-02T20:09:38+00:00",
   "from": "2026-09-25",
   "through": "2026-10-23",
   "events": [
@@ -741,52 +741,52 @@
       "awayScore": "2",
       "group": "Group C3",
       "status": {
-        "state": "in",
-        "detail": "81'"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "81'"
+      "clock": "90'+5'"
     },
     {
       "id": "401861104",
       "date": "2026-10-02T16:00Z",
       "home": "Cyprus",
       "away": "Armenia",
-      "homeScore": "0",
+      "homeScore": "2",
       "awayScore": "0",
       "group": "Group C2",
       "status": {
-        "state": "pre",
-        "detail": "Fri, October 2nd at 12:00 PM EDT"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "0'"
+      "clock": "90'+6'"
     },
     {
       "id": "401861105",
       "date": "2026-10-02T16:00Z",
       "home": "Latvia",
       "away": "Montenegro",
-      "homeScore": "0",
-      "awayScore": "0",
+      "homeScore": "1",
+      "awayScore": "2",
       "group": "Group C2",
       "status": {
-        "state": "pre",
-        "detail": "Fri, October 2nd at 12:00 PM EDT"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "0'"
+      "clock": "90'+4'"
     },
     {
       "id": "401861109",
       "date": "2026-10-02T18:45Z",
       "home": "Belgium",
       "away": "Türkiye",
-      "homeScore": "0",
+      "homeScore": "2",
       "awayScore": "0",
       "group": "Group A1",
       "status": {
-        "state": "pre",
-        "detail": "Fri, October 2nd at 2:45 PM EDT"
+        "state": "in",
+        "detail": "65'"
       },
-      "clock": "0'"
+      "clock": "65'"
     },
     {
       "id": "401861107",
@@ -794,69 +794,69 @@
       "home": "Bosnia-Herzegovina",
       "away": "Sweden",
       "homeScore": "0",
-      "awayScore": "0",
+      "awayScore": "1",
       "group": "Group B4",
       "status": {
-        "state": "pre",
-        "detail": "Fri, October 2nd at 2:45 PM EDT"
+        "state": "in",
+        "detail": "65'"
       },
-      "clock": "0'"
+      "clock": "65'"
     },
     {
       "id": "401861110",
       "date": "2026-10-02T18:45Z",
       "home": "Faroe Islands",
       "away": "Slovakia",
-      "homeScore": "0",
-      "awayScore": "0",
+      "homeScore": "1",
+      "awayScore": "1",
       "group": "Group C3",
       "status": {
-        "state": "pre",
-        "detail": "Fri, October 2nd at 2:45 PM EDT"
+        "state": "in",
+        "detail": "67'"
       },
-      "clock": "0'"
+      "clock": "67'"
     },
     {
       "id": "401861103",
       "date": "2026-10-02T18:45Z",
       "home": "France",
       "away": "Italy",
-      "homeScore": "0",
+      "homeScore": "1",
       "awayScore": "0",
       "group": "Group A1",
       "status": {
-        "state": "pre",
-        "detail": "Fri, October 2nd at 2:45 PM EDT"
+        "state": "in",
+        "detail": "64'"
       },
-      "clock": "0'"
+      "clock": "64'"
     },
     {
       "id": "401861102",
       "date": "2026-10-02T18:45Z",
       "home": "Hungary",
       "away": "Georgia",
-      "homeScore": "0",
+      "homeScore": "1",
       "awayScore": "0",
       "group": "Group B2",
       "status": {
-        "state": "pre",
-        "detail": "Fri, October 2nd at 2:45 PM EDT"
+        "state": "in",
+        "detail": "65'"
       },
-      "clock": "0'"
+      "clock": "65'"
     },
     {
       "id": "401861108",
       "date": "2026-10-02T18:45Z",
       "home": "Poland",
       "away": "Romania",
-      "homeScore": "0",
+      "homeScore": "4",
       "awayScore": "0",
       "group": "Group B4",
       "status": {
-        "state": "pre",
-        "detail": "Fri, October 2nd at 2:45 PM EDT"
+        "state": "in",
+        "detail": "66'"
       },
-      "clock": "0'"
+      "clock": "66'"
     },
     {
       "id": "401861106",
@@ -864,13 +864,13 @@
       "home": "Ukraine",
       "away": "Northern Ireland",
       "homeScore": "0",
-      "awayScore": "0",
+      "awayScore": "3",
       "group": "Group B2",
       "status": {
-        "state": "pre",
-        "detail": "Fri, October 2nd at 2:45 PM EDT"
+        "state": "in",
+        "detail": "64'"
       },
-      "clock": "0'"
+      "clock": "64'"
     },
     {
       "id": "401861111",
