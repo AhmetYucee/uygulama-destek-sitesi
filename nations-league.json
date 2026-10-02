@@ -1,6 +1,6 @@
 {
   "source": "ESPN",
-  "fetchedAt": "2026-10-02T08:53:19+00:00",
+  "fetchedAt": "2026-10-02T15:39:40+00:00",
   "from": "2026-09-25",
   "through": "2026-10-23",
   "events": [
@@ -737,14 +737,14 @@
       "date": "2026-10-02T14:00Z",
       "home": "Kazakhstan",
       "away": "Moldova",
-      "homeScore": "0",
-      "awayScore": "0",
+      "homeScore": "1",
+      "awayScore": "2",
       "group": "Group C3",
       "status": {
-        "state": "pre",
-        "detail": "Fri, October 2nd at 10:00 AM EDT"
+        "state": "in",
+        "detail": "81'"
       },
-      "clock": "0'"
+      "clock": "81'"
     },
     {
       "id": "401861104",
