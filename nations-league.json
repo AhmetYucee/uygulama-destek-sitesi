@@ -1,6 +1,6 @@
 {
   "source": "ESPN",
-  "fetchedAt": "2026-10-03T10:21:30+00:00",
+  "fetchedAt": "2026-10-03T14:50:00+00:00",
   "from": "2026-09-26",
   "through": "2026-10-24",
   "events": [
@@ -765,14 +765,14 @@
       "date": "2026-10-03T13:00Z",
       "home": "Finland",
       "away": "Albania",
-      "homeScore": "0",
-      "awayScore": "0",
+      "homeScore": "2",
+      "awayScore": "1",
       "group": "Group C1",
       "status": {
-        "state": "pre",
-        "detail": "Sat, October 3rd at 9:00 AM EDT"
+        "state": "in",
+        "detail": "89'"
       },
-      "clock": "0'"
+      "clock": "89'"
     },
     {
       "id": "401861114",
