@@ -1,6 +1,6 @@
 {
   "source": "ESPN",
-  "fetchedAt": "2026-10-04T12:47:08+00:00",
+  "fetchedAt": "2026-10-04T17:24:54+00:00",
   "from": "2026-09-27",
   "through": "2026-10-25",
   "events": [
@@ -737,14 +737,14 @@
       "date": "2026-10-04T13:00Z",
       "home": "Azerbaijan",
       "away": "Lithuania",
-      "homeScore": "0",
+      "homeScore": "1",
       "awayScore": "0",
       "group": "Group D2",
       "status": {
-        "state": "pre",
-        "detail": "Sun, October 4th at 9:00 AM EDT"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "0'"
+      "clock": "90'+7'"
     },
     {
       "id": "401861121",
@@ -755,24 +755,24 @@
       "awayScore": "0",
       "group": "Group B3",
       "status": {
-        "state": "pre",
-        "detail": "Sun, October 4th at 12:00 PM EDT"
+        "state": "in",
+        "detail": "66'"
       },
-      "clock": "0'"
+      "clock": "66'"
     },
     {
       "id": "401861120",
       "date": "2026-10-04T16:00Z",
       "home": "Malta",
       "away": "Andorra",
-      "homeScore": "0",
+      "homeScore": "1",
       "awayScore": "0",
       "group": "Group D1",
       "status": {
-        "state": "pre",
-        "detail": "Sun, October 4th at 12:00 PM EDT"
+        "state": "in",
+        "detail": "68'"
       },
-      "clock": "0'"
+      "clock": "68'"
     },
     {
       "id": "401861123",
