@@ -1,6 +1,6 @@
 {
   "source": "ESPN",
-  "fetchedAt": "2026-10-05T09:32:57+00:00",
+  "fetchedAt": "2026-10-05T18:51:46+00:00",
   "from": "2026-09-28",
   "through": "2026-10-26",
   "events": [
@@ -737,14 +737,14 @@
       "date": "2026-10-05T16:00Z",
       "home": "Cyprus",
       "away": "Latvia",
-      "homeScore": "0",
-      "awayScore": "0",
+      "homeScore": "2",
+      "awayScore": "1",
       "group": "Group C2",
       "status": {
-        "state": "pre",
-        "detail": "Mon, October 5th at 12:00 PM EDT"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "0'"
+      "clock": "90'+6'"
     },
     {
       "id": "401861133",
@@ -755,10 +755,10 @@
       "awayScore": "0",
       "group": "Group B4",
       "status": {
-        "state": "pre",
-        "detail": "Mon, October 5th at 2:45 PM EDT"
+        "state": "in",
+        "detail": "6'"
       },
-      "clock": "0'"
+      "clock": "6'"
     },
     {
       "id": "401861129",
@@ -769,10 +769,10 @@
       "awayScore": "0",
       "group": "Group A1",
       "status": {
-        "state": "pre",
-        "detail": "Mon, October 5th at 2:45 PM EDT"
+        "state": "in",
+        "detail": "6'"
       },
-      "clock": "0'"
+      "clock": "6'"
     },
     {
       "id": "401861131",
@@ -783,10 +783,10 @@
       "awayScore": "0",
       "group": "Group A1",
       "status": {
-        "state": "pre",
-        "detail": "Mon, October 5th at 2:45 PM EDT"
+        "state": "in",
+        "detail": "6'"
       },
-      "clock": "0'"
+      "clock": "6'"
     },
     {
       "id": "401861130",
@@ -797,10 +797,10 @@
       "awayScore": "0",
       "group": "Group C2",
       "status": {
-        "state": "pre",
-        "detail": "Mon, October 5th at 2:45 PM EDT"
+        "state": "in",
+        "detail": "6'"
       },
-      "clock": "0'"
+      "clock": "6'"
     },
     {
       "id": "401861132",
@@ -811,10 +811,10 @@
       "awayScore": "0",
       "group": "Group B2",
       "status": {
-        "state": "pre",
-        "detail": "Mon, October 5th at 2:45 PM EDT"
+        "state": "in",
+        "detail": "5'"
       },
-      "clock": "0'"
+      "clock": "5'"
     },
     {
       "id": "401861128",
@@ -825,10 +825,10 @@
       "awayScore": "0",
       "group": "Group B4",
       "status": {
-        "state": "pre",
-        "detail": "Mon, October 5th at 2:45 PM EDT"
+        "state": "in",
+        "detail": "6'"
       },
-      "clock": "0'"
+      "clock": "6'"
     },
     {
       "id": "401861134",
@@ -839,10 +839,10 @@
       "awayScore": "0",
       "group": "Group B2",
       "status": {
-        "state": "pre",
-        "detail": "Mon, October 5th at 2:45 PM EDT"
+        "state": "in",
+        "detail": "5'"
       },
-      "clock": "0'"
+      "clock": "5'"
     },
     {
       "id": "401861135",
