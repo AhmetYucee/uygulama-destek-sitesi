@@ -1,6 +1,6 @@
 {
   "source": "ESPN",
-  "fetchedAt": "2026-10-06T06:54:44+00:00",
+  "fetchedAt": "2026-10-06T14:06:04+00:00",
   "from": "2026-09-29",
   "through": "2026-10-27",
   "events": [
@@ -741,10 +741,10 @@
       "awayScore": "0",
       "group": "Group C3",
       "status": {
-        "state": "pre",
-        "detail": "Tue, October 6th at 10:00 AM EDT"
+        "state": "in",
+        "detail": "5'"
       },
-      "clock": "0'"
+      "clock": "5'"
     },
     {
       "id": "401861140",
