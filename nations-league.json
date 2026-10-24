@@ -1,8 +1,8 @@
 {
   "source": "ESPN",
-  "fetchedAt": "2026-10-24T19:22:57+00:00",
-  "from": "2026-10-17",
-  "through": "2026-11-14",
+  "fetchedAt": "2026-10-24T21:48:56+00:00",
+  "from": "2026-10-18",
+  "through": "2026-11-15",
   "events": [
     {
       "id": "401861146",
@@ -365,6 +365,118 @@
       "status": {
         "state": "pre",
         "detail": "Sat, November 14th at 2:45 PM EST"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861172",
+      "date": "2026-11-15T14:00Z",
+      "home": "Cyprus",
+      "away": "Montenegro",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group C2",
+      "status": {
+        "state": "pre",
+        "detail": "Sun, November 15th at 9:00 AM EST"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861171",
+      "date": "2026-11-15T14:00Z",
+      "home": "Latvia",
+      "away": "Armenia",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group C2",
+      "status": {
+        "state": "pre",
+        "detail": "Sun, November 15th at 9:00 AM EST"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861173",
+      "date": "2026-11-15T17:00Z",
+      "home": "Belarus",
+      "away": "Albania",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group C1",
+      "status": {
+        "state": "pre",
+        "detail": "Sun, November 15th at 12:00 PM EST"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861174",
+      "date": "2026-11-15T17:00Z",
+      "home": "Finland",
+      "away": "San Marino",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group C1",
+      "status": {
+        "state": "pre",
+        "detail": "Sun, November 15th at 12:00 PM EST"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861176",
+      "date": "2026-11-15T19:45Z",
+      "home": "Belgium",
+      "away": "Italy",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group A1",
+      "status": {
+        "state": "pre",
+        "detail": "Sun, November 15th at 2:45 PM EST"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861178",
+      "date": "2026-11-15T19:45Z",
+      "home": "Croatia",
+      "away": "Czechia",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group A3",
+      "status": {
+        "state": "pre",
+        "detail": "Sun, November 15th at 2:45 PM EST"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861177",
+      "date": "2026-11-15T19:45Z",
+      "home": "France",
+      "away": "Türkiye",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group A1",
+      "status": {
+        "state": "pre",
+        "detail": "Sun, November 15th at 2:45 PM EST"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861175",
+      "date": "2026-11-15T19:45Z",
+      "home": "Spain",
+      "away": "England",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group A3",
+      "status": {
+        "state": "pre",
+        "detail": "Sun, November 15th at 2:45 PM EST"
       },
       "clock": "0'"
     }
