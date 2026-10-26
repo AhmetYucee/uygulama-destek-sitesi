@@ -1,8 +1,8 @@
 {
   "source": "ESPN",
-  "fetchedAt": "2026-10-26T17:36:59+00:00",
-  "from": "2026-10-19",
-  "through": "2026-11-16",
+  "fetchedAt": "2026-10-26T21:55:05+00:00",
+  "from": "2026-10-20",
+  "through": "2026-11-17",
   "events": [
     {
       "id": "401861146",
@@ -617,6 +617,118 @@
       "status": {
         "state": "pre",
         "detail": "Mon, November 16th at 2:45 PM EST"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861196",
+      "date": "2026-11-17T19:45Z",
+      "home": "Bosnia-Herzegovina",
+      "away": "Romania",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group B4",
+      "status": {
+        "state": "pre",
+        "detail": "Tue, November 17th at 2:45 PM EST"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861194",
+      "date": "2026-11-17T19:45Z",
+      "home": "Denmark",
+      "away": "Norway",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group A4",
+      "status": {
+        "state": "pre",
+        "detail": "Tue, November 17th at 2:45 PM EST"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861191",
+      "date": "2026-11-17T19:45Z",
+      "home": "Hungary",
+      "away": "Northern Ireland",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group B2",
+      "status": {
+        "state": "pre",
+        "detail": "Tue, November 17th at 2:45 PM EST"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861193",
+      "date": "2026-11-17T19:45Z",
+      "home": "Israel",
+      "away": "Austria",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group B3",
+      "status": {
+        "state": "pre",
+        "detail": "Tue, November 17th at 2:45 PM EST"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861195",
+      "date": "2026-11-17T19:45Z",
+      "home": "Poland",
+      "away": "Sweden",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group B4",
+      "status": {
+        "state": "pre",
+        "detail": "Tue, November 17th at 2:45 PM EST"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861192",
+      "date": "2026-11-17T19:45Z",
+      "home": "Republic of Ireland",
+      "away": "Kosovo",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group B3",
+      "status": {
+        "state": "pre",
+        "detail": "Tue, November 17th at 2:45 PM EST"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861190",
+      "date": "2026-11-17T19:45Z",
+      "home": "Ukraine",
+      "away": "Georgia",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group B2",
+      "status": {
+        "state": "pre",
+        "detail": "Tue, November 17th at 2:45 PM EST"
+      },
+      "clock": "0'"
+    },
+    {
+      "id": "401861189",
+      "date": "2026-11-17T19:45Z",
+      "home": "Wales",
+      "away": "Portugal",
+      "homeScore": "0",
+      "awayScore": "0",
+      "group": "Group A4",
+      "status": {
+        "state": "pre",
+        "detail": "Tue, November 17th at 2:45 PM EST"
       },
       "clock": "0'"
     }
