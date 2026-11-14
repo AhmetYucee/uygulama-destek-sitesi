@@ -1,6 +1,6 @@
 {
   "source": "ESPN",
-  "fetchedAt": "2026-11-14T08:51:27+00:00",
+  "fetchedAt": "2026-11-14T15:42:10+00:00",
   "from": "2026-11-07",
   "through": "2026-12-05",
   "events": [
@@ -265,10 +265,10 @@
       "awayScore": "0",
       "group": "Group B3",
       "status": {
-        "state": "pre",
-        "detail": "Sat, November 14th at 9:00 AM EST"
+        "state": "in",
+        "detail": "85'"
       },
-      "clock": "0'"
+      "clock": "85'"
     },
     {
       "id": "401861164",
