@@ -1,8 +1,8 @@
 {
   "source": "ESPN",
-  "fetchedAt": "2026-11-14T20:09:00+00:00",
-  "from": "2026-11-07",
-  "through": "2026-12-05",
+  "fetchedAt": "2026-11-14T23:57:34+00:00",
+  "from": "2026-11-08",
+  "through": "2026-12-06",
   "events": [
     {
       "id": "401861146",
@@ -303,56 +303,56 @@
       "date": "2026-11-14T19:45Z",
       "home": "Austria",
       "away": "Republic of Ireland",
-      "homeScore": "0",
+      "homeScore": "1",
       "awayScore": "0",
       "group": "Group B3",
       "status": {
-        "state": "in",
-        "detail": "23'"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "23'"
+      "clock": "90'+4'"
     },
     {
       "id": "401861169",
       "date": "2026-11-14T19:45Z",
       "home": "Northern Ireland",
       "away": "Ukraine",
-      "homeScore": "0",
+      "homeScore": "1",
       "awayScore": "0",
       "group": "Group B2",
       "status": {
-        "state": "in",
-        "detail": "22'"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "22'"
+      "clock": "90'+5'"
     },
     {
       "id": "401861167",
       "date": "2026-11-14T19:45Z",
       "home": "Portugal",
       "away": "Denmark",
-      "homeScore": "0",
-      "awayScore": "0",
+      "homeScore": "1",
+      "awayScore": "4",
       "group": "Group A4",
       "status": {
-        "state": "in",
-        "detail": "23'"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "23'"
+      "clock": "90'+5'"
     },
     {
       "id": "401861168",
       "date": "2026-11-14T19:45Z",
       "home": "Romania",
       "away": "Poland",
-      "homeScore": "0",
-      "awayScore": "0",
+      "homeScore": "2",
+      "awayScore": "1",
       "group": "Group B4",
       "status": {
-        "state": "in",
-        "detail": "22'"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "22'"
+      "clock": "90'+6'"
     },
     {
       "id": "401861166",
@@ -360,13 +360,13 @@
       "home": "Sweden",
       "away": "Bosnia-Herzegovina",
       "homeScore": "3",
-      "awayScore": "0",
+      "awayScore": "2",
       "group": "Group B4",
       "status": {
-        "state": "in",
-        "detail": "23'"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "23'"
+      "clock": "90'+6'"
     },
     {
       "id": "401861172",
