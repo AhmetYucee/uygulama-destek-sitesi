@@ -1,6 +1,6 @@
 {
   "source": "ESPN",
-  "fetchedAt": "2026-11-14T15:42:10+00:00",
+  "fetchedAt": "2026-11-14T20:09:00+00:00",
   "from": "2026-11-07",
   "through": "2026-12-05",
   "events": [
@@ -265,10 +265,10 @@
       "awayScore": "0",
       "group": "Group B3",
       "status": {
-        "state": "in",
-        "detail": "85'"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "85'"
+      "clock": "90'+4'"
     },
     {
       "id": "401861164",
@@ -276,27 +276,27 @@
       "home": "Georgia",
       "away": "Hungary",
       "homeScore": "0",
-      "awayScore": "0",
+      "awayScore": "2",
       "group": "Group B2",
       "status": {
-        "state": "pre",
-        "detail": "Sat, November 14th at 12:00 PM EST"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "0'"
+      "clock": "90'+5'"
     },
     {
       "id": "401861165",
       "date": "2026-11-14T17:00Z",
       "home": "Norway",
       "away": "Wales",
-      "homeScore": "0",
-      "awayScore": "0",
+      "homeScore": "3",
+      "awayScore": "1",
       "group": "Group A4",
       "status": {
-        "state": "pre",
-        "detail": "Sat, November 14th at 12:00 PM EST"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "0'"
+      "clock": "90'+6'"
     },
     {
       "id": "401861170",
@@ -307,10 +307,10 @@
       "awayScore": "0",
       "group": "Group B3",
       "status": {
-        "state": "pre",
-        "detail": "Sat, November 14th at 2:45 PM EST"
+        "state": "in",
+        "detail": "23'"
       },
-      "clock": "0'"
+      "clock": "23'"
     },
     {
       "id": "401861169",
@@ -321,10 +321,10 @@
       "awayScore": "0",
       "group": "Group B2",
       "status": {
-        "state": "pre",
-        "detail": "Sat, November 14th at 2:45 PM EST"
+        "state": "in",
+        "detail": "22'"
       },
-      "clock": "0'"
+      "clock": "22'"
     },
     {
       "id": "401861167",
@@ -335,10 +335,10 @@
       "awayScore": "0",
       "group": "Group A4",
       "status": {
-        "state": "pre",
-        "detail": "Sat, November 14th at 2:45 PM EST"
+        "state": "in",
+        "detail": "23'"
       },
-      "clock": "0'"
+      "clock": "23'"
     },
     {
       "id": "401861168",
@@ -349,24 +349,24 @@
       "awayScore": "0",
       "group": "Group B4",
       "status": {
-        "state": "pre",
-        "detail": "Sat, November 14th at 2:45 PM EST"
+        "state": "in",
+        "detail": "22'"
       },
-      "clock": "0'"
+      "clock": "22'"
     },
     {
       "id": "401861166",
       "date": "2026-11-14T19:45Z",
       "home": "Sweden",
       "away": "Bosnia-Herzegovina",
-      "homeScore": "0",
+      "homeScore": "3",
       "awayScore": "0",
       "group": "Group B4",
       "status": {
-        "state": "pre",
-        "detail": "Sat, November 14th at 2:45 PM EST"
+        "state": "in",
+        "detail": "23'"
       },
-      "clock": "0'"
+      "clock": "23'"
     },
     {
       "id": "401861172",
