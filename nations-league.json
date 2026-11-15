@@ -1,8 +1,8 @@
 {
   "source": "ESPN",
-  "fetchedAt": "2026-11-15T19:48:26+00:00",
-  "from": "2026-11-08",
-  "through": "2026-12-06",
+  "fetchedAt": "2026-11-15T23:53:49+00:00",
+  "from": "2026-11-09",
+  "through": "2026-12-07",
   "events": [
     {
       "id": "401861146",
@@ -429,56 +429,56 @@
       "date": "2026-11-15T19:45Z",
       "home": "Belgium",
       "away": "Italy",
-      "homeScore": "0",
-      "awayScore": "0",
+      "homeScore": "4",
+      "awayScore": "1",
       "group": "Group A1",
       "status": {
-        "state": "in",
-        "detail": "2'"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "2'"
+      "clock": "90'+6'"
     },
     {
       "id": "401861178",
       "date": "2026-11-15T19:45Z",
       "home": "Croatia",
       "away": "Czechia",
-      "homeScore": "1",
-      "awayScore": "0",
+      "homeScore": "2",
+      "awayScore": "1",
       "group": "Group A3",
       "status": {
-        "state": "in",
-        "detail": "3'"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "3'"
+      "clock": "90'+3'"
     },
     {
       "id": "401861177",
       "date": "2026-11-15T19:45Z",
       "home": "France",
       "away": "Türkiye",
-      "homeScore": "0",
-      "awayScore": "0",
+      "homeScore": "2",
+      "awayScore": "1",
       "group": "Group A1",
       "status": {
-        "state": "in",
-        "detail": "2'"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "2'"
+      "clock": "90'+5'"
     },
     {
       "id": "401861175",
       "date": "2026-11-15T19:45Z",
       "home": "Spain",
       "away": "England",
-      "homeScore": "0",
-      "awayScore": "0",
+      "homeScore": "2",
+      "awayScore": "3",
       "group": "Group A3",
       "status": {
-        "state": "pre",
-        "detail": "Sun, November 15th at 2:45 PM EST"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "0'"
+      "clock": "90'+5'"
     },
     {
       "id": "401861180",
