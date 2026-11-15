@@ -1,6 +1,6 @@
 {
   "source": "ESPN",
-  "fetchedAt": "2026-11-15T06:12:01+00:00",
+  "fetchedAt": "2026-11-15T14:03:49+00:00",
   "from": "2026-11-08",
   "through": "2026-12-06",
   "events": [
@@ -377,10 +377,10 @@
       "awayScore": "0",
       "group": "Group C2",
       "status": {
-        "state": "pre",
-        "detail": "Sun, November 15th at 9:00 AM EST"
+        "state": "in",
+        "detail": "3'"
       },
-      "clock": "0'"
+      "clock": "3'"
     },
     {
       "id": "401861171",
@@ -391,10 +391,10 @@
       "awayScore": "0",
       "group": "Group C2",
       "status": {
-        "state": "pre",
-        "detail": "Sun, November 15th at 9:00 AM EST"
+        "state": "in",
+        "detail": "2'"
       },
-      "clock": "0'"
+      "clock": "2'"
     },
     {
       "id": "401861173",
