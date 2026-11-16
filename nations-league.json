@@ -1,8 +1,8 @@
 {
   "source": "ESPN",
-  "fetchedAt": "2026-11-16T15:34:13+00:00",
-  "from": "2026-11-09",
-  "through": "2026-12-07",
+  "fetchedAt": "2026-11-16T23:51:28+00:00",
+  "from": "2026-11-10",
+  "through": "2026-12-08",
   "events": [
     {
       "id": "401861146",
@@ -489,108 +489,108 @@
       "awayScore": "0",
       "group": "Group C3",
       "status": {
-        "state": "in",
-        "detail": "32'"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "32'"
+      "clock": "90'+3'"
     },
     {
       "id": "401861181",
       "date": "2026-11-16T15:00Z",
       "home": "Kazakhstan",
       "away": "Slovakia",
-      "homeScore": "1",
-      "awayScore": "0",
+      "homeScore": "2",
+      "awayScore": "2",
       "group": "Group C3",
       "status": {
-        "state": "in",
-        "detail": "33'"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "33'"
+      "clock": "90'+10'"
     },
     {
       "id": "401861183",
       "date": "2026-11-16T17:00Z",
       "home": "Estonia",
       "away": "Bulgaria",
-      "homeScore": "0",
-      "awayScore": "0",
+      "homeScore": "2",
+      "awayScore": "1",
       "group": "Group C4",
       "status": {
-        "state": "pre",
-        "detail": "Mon, November 16th at 12:00 PM EST"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "0'"
+      "clock": "90'+3'"
     },
     {
       "id": "401861182",
       "date": "2026-11-16T17:00Z",
       "home": "Iceland",
       "away": "Luxembourg",
-      "homeScore": "0",
+      "homeScore": "3",
       "awayScore": "0",
       "group": "Group C4",
       "status": {
-        "state": "pre",
-        "detail": "Mon, November 16th at 12:00 PM EST"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "0'"
+      "clock": "90'+2'"
     },
     {
       "id": "401861184",
       "date": "2026-11-16T17:00Z",
       "home": "Lithuania",
       "away": "Liechtenstein",
-      "homeScore": "0",
-      "awayScore": "0",
+      "homeScore": "2",
+      "awayScore": "1",
       "group": "Group D2",
       "status": {
-        "state": "pre",
-        "detail": "Mon, November 16th at 12:00 PM EST"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "0'"
+      "clock": "90'+5'"
     },
     {
       "id": "401861185",
       "date": "2026-11-16T19:45Z",
       "home": "Germany",
       "away": "Netherlands",
-      "homeScore": "0",
+      "homeScore": "5",
       "awayScore": "0",
       "group": "Group A2",
       "status": {
-        "state": "pre",
-        "detail": "Mon, November 16th at 2:45 PM EST"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "0'"
+      "clock": "90'+2'"
     },
     {
       "id": "401861179",
       "date": "2026-11-16T19:45Z",
       "home": "Gibraltar",
       "away": "Malta",
-      "homeScore": "0",
-      "awayScore": "0",
+      "homeScore": "1",
+      "awayScore": "1",
       "group": "Group D1",
       "status": {
-        "state": "pre",
-        "detail": "Mon, November 16th at 2:45 PM EST"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "0'"
+      "clock": "90'+4'"
     },
     {
       "id": "401861188",
       "date": "2026-11-16T19:45Z",
       "home": "Greece",
       "away": "Serbia",
-      "homeScore": "0",
+      "homeScore": "1",
       "awayScore": "0",
       "group": "Group A2",
       "status": {
-        "state": "pre",
-        "detail": "Mon, November 16th at 2:45 PM EST"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "0'"
+      "clock": "90'+4'"
     },
     {
       "id": "401861187",
@@ -598,27 +598,27 @@
       "home": "North Macedonia",
       "away": "Slovenia",
       "homeScore": "0",
-      "awayScore": "0",
+      "awayScore": "3",
       "group": "Group B1",
       "status": {
-        "state": "pre",
-        "detail": "Mon, November 16th at 2:45 PM EST"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "0'"
+      "clock": "90'+3'"
     },
     {
       "id": "401861186",
       "date": "2026-11-16T19:45Z",
       "home": "Switzerland",
       "away": "Scotland",
-      "homeScore": "0",
+      "homeScore": "4",
       "awayScore": "0",
       "group": "Group B1",
       "status": {
-        "state": "pre",
-        "detail": "Mon, November 16th at 2:45 PM EST"
+        "state": "post",
+        "detail": "FT"
       },
-      "clock": "0'"
+      "clock": "90'+3'"
     },
     {
       "id": "401861196",
