@@ -1,6 +1,6 @@
 {
   "source": "ESPN",
-  "fetchedAt": "2026-11-16T05:59:43+00:00",
+  "fetchedAt": "2026-11-16T15:34:13+00:00",
   "from": "2026-11-09",
   "through": "2026-12-07",
   "events": [
@@ -485,28 +485,28 @@
       "date": "2026-11-16T15:00Z",
       "home": "Faroe Islands",
       "away": "Moldova",
-      "homeScore": "0",
+      "homeScore": "1",
       "awayScore": "0",
       "group": "Group C3",
       "status": {
-        "state": "pre",
-        "detail": "Mon, November 16th at 10:00 AM EST"
+        "state": "in",
+        "detail": "32'"
       },
-      "clock": "0'"
+      "clock": "32'"
     },
     {
       "id": "401861181",
       "date": "2026-11-16T15:00Z",
       "home": "Kazakhstan",
       "away": "Slovakia",
-      "homeScore": "0",
+      "homeScore": "1",
       "awayScore": "0",
       "group": "Group C3",
       "status": {
-        "state": "pre",
-        "detail": "Mon, November 16th at 10:00 AM EST"
+        "state": "in",
+        "detail": "33'"
       },
-      "clock": "0'"
+      "clock": "33'"
     },
     {
       "id": "401861183",
